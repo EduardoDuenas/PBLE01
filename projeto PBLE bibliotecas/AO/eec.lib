@@ -1,0 +1,45 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Abracon AB26T-32.768KHZ
+#
+DEF AB26T-32.768KHZ Y 0 40 Y Y 1 L N
+F0 "Y" 0 200 50 H V L CNN 
+F1 "AB26T-32.768KHZ" 0 300 50 H V L CNN 
+F2 "Abracon-AB26T-32.768KHZ-*" 0 400 50 H I L CNN 
+F3 "https://upverter.com/datasheet/e60e0d8762f6cc85b53388b76005bd605569ec5b.pdf" 0 500 50 H I L CNN 
+F4 "±20ppm" 0 600 50 H I L CNN "Frequency Tolerance"
+F5 "Fundamental" 0 700 50 H I L CNN "Operating Mode"
+F6 "Crys" 0 800 50 H I L CNN "category"
+F7 "Crystals/Resonators/Oscillators" 0 900 50 H I L CNN "category 008acd80318bdb4d"
+F8 "Uncategorized" 0 1000 50 H I L CNN "category 6088ad82520dbb4f"
+F9 "Passive Components" 0 1100 50 H I L CNN "category 7542b8484461ae85"
+F10 "Crystals" 0 1200 50 H I L CNN "category 9afb57f1abf5413c"
+F11 "32.768kHz ±20ppm Crystal 12.5pF 35 kOhm -10°C ~ 60°C Through Hole Cylindrical Can, Radial" 0 1300 50 H I L CNN "digikey description"
+F12 "535-9032-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "yes" 0 1500 50 H I L CNN "lead free"
+F14 "799e2e86d1baa452" 0 1600 50 H I L CNN "library id"
+F15 "Abracon" 0 1700 50 H I L CNN "manufacturer"
+F16 "through hole" 0 1800 50 H I L CNN "mounting type"
+F17 "815-AB26T-32.768KHZ" 0 1900 50 H I L CNN "mouser part number"
+F18 "2" 0 2000 50 H I L CNN "num pins"
+F19 "4ab983b7bf86957e" 0 2100 50 H I L CNN "octopart part number"
+F20 "RADIAL" 0 2200 50 H I L CNN "package"
+F21 "yes" 0 2300 50 H I L CNN "rohs"
+F22 "+60°C" 0 2400 50 H I L CNN "temperature range high"
+F23 "-10°C" 0 2500 50 H I L CNN "temperature range low"
+F24 "32.768kHz" 0 2600 50 H I L CNN "frequency"
+F25 "12.5pF" 0 2700 50 H I L CNN "load capacitance"
+DRAW
+X 1 1 0 0 50 R 40 0 1 1 U 
+X 2 2 300 0 50 L 40 0 1 1 U 
+P 2 1 1 0 50 80 50 -80 N
+P 2 1 1 0 250 80 250 -80 N
+P 2 1 1 0 100 100 100 -100 N
+P 2 1 1 0 100 100 200 100 N
+P 2 1 1 0 200 100 200 -100 N
+P 2 1 1 0 200 -100 100 -100 N
+ENDDRAW
+ENDDEF
+#
+# End Library
