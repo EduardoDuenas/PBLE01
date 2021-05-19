@@ -24,7 +24,7 @@ F 3 "" H 5250 4050 50  0001 C CNN
 	1    5250 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 3700 3300 0    50   Input ~ 0
+Text HLabel 3500 3300 0    50   Input ~ 0
 in
 Text HLabel 6250 3300 2    50   Output ~ 0
 out
@@ -74,10 +74,7 @@ Wire Wire Line
 Connection ~ 5250 3800
 Connection ~ 6100 3300
 Wire Wire Line
-	3700 3300 4100 3300
-Wire Wire Line
 	4100 3300 4100 3500
-Connection ~ 4100 3300
 Wire Wire Line
 	4100 3300 4300 3300
 $Comp
@@ -95,4 +92,20 @@ Wire Wire Line
 	4300 3200 4300 3050
 Wire Wire Line
 	4300 3050 4100 3050
+$Comp
+L Diode:1N5819 D1
+U 1 1 60A5E713
+P 3750 3300
+F 0 "D1" H 3750 3083 50  0000 C CNN
+F 1 "1N5819" H 3750 3174 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3750 3125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3750 3300 50  0001 C CNN
+	1    3750 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3300 4100 3300
+Connection ~ 4100 3300
+Wire Wire Line
+	3500 3300 3600 3300
 $EndSCHEMATC

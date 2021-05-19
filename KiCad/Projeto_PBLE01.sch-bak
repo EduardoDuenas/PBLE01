@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L MCU_Microchip_PIC18:PIC18F4550-IPT U?
 U 1 1 609EA2A9
-P 2400 2550
-F 0 "U?" H 2400 4131 50  0000 C CNN
-F 1 "PIC18F4550-IPT" H 2400 4040 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2400 2750 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/39760d.pdf" H 2400 2300 50  0001 C CNN
-	1    2400 2550
+P 2900 2550
+F 0 "U?" H 2900 4131 50  0000 C CNN
+F 1 "PIC18F4550-IPT" H 2900 4040 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2900 2750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/39760d.pdf" H 2900 2300 50  0001 C CNN
+	1    2900 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -38,23 +38,12 @@ $EndComp
 $Comp
 L Connector:USB_B J?
 U 1 1 609F2570
-P 1250 5450
-F 0 "J?" H 1307 5917 50  0000 C CNN
-F 1 "USB_B" H 1307 5826 50  0000 C CNN
-F 2 "" H 1400 5400 50  0001 C CNN
-F 3 " ~" H 1400 5400 50  0001 C CNN
-	1    1250 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM358 U?
-U 1 1 609FD288
-P 4850 6450
-F 0 "U?" H 4850 6817 50  0000 C CNN
-F 1 "LM358" H 4850 6726 50  0000 C CNN
-F 2 "" H 4850 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4850 6450 50  0001 C CNN
-	1    4850 6450
+P 1200 5450
+F 0 "J?" H 1257 5917 50  0000 C CNN
+F 1 "USB_B" H 1257 5826 50  0000 C CNN
+F 2 "" H 1350 5400 50  0001 C CNN
+F 3 " ~" H 1350 5400 50  0001 C CNN
+	1    1200 5450
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -84,44 +73,44 @@ Text GLabel 2250 7150 2    50   BiDi ~ 0
 Vcc_5v
 Wire Wire Line
 	2000 7150 2250 7150
-Text GLabel 1750 750  0    50   BiDi ~ 0
+Text GLabel 2250 750  0    50   BiDi ~ 0
 Vcc_5v
 Wire Wire Line
-	1750 750  2300 750 
+	2250 750  2800 750 
 Wire Wire Line
-	2300 750  2300 1150
+	2800 750  2800 1150
 Wire Wire Line
-	2300 750  2400 750 
+	2800 750  2900 750 
 Wire Wire Line
-	2400 750  2400 1150
-Connection ~ 2300 750 
+	2900 750  2900 1150
+Connection ~ 2800 750 
 Wire Wire Line
-	2300 3950 2300 4200
+	2800 3950 2800 4200
 Wire Wire Line
-	2300 4200 2400 4200
+	2800 4200 2900 4200
 Wire Wire Line
-	2400 4200 2400 3950
+	2900 4200 2900 3950
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60A3638D
-P 2400 4200
-F 0 "#PWR?" H 2400 3950 50  0001 C CNN
-F 1 "GNDREF" H 2405 4027 50  0000 C CNN
-F 2 "" H 2400 4200 50  0001 C CNN
-F 3 "" H 2400 4200 50  0001 C CNN
-	1    2400 4200
+P 2900 4200
+F 0 "#PWR?" H 2900 3950 50  0001 C CNN
+F 1 "GNDREF" H 2905 4027 50  0000 C CNN
+F 2 "" H 2900 4200 50  0001 C CNN
+F 3 "" H 2900 4200 50  0001 C CNN
+	1    2900 4200
 	1    0    0    -1  
 $EndComp
-Connection ~ 2400 4200
+Connection ~ 2900 4200
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60A478EE
-P 1250 6100
-F 0 "#PWR?" H 1250 5850 50  0001 C CNN
-F 1 "GNDREF" H 1255 5927 50  0000 C CNN
-F 2 "" H 1250 6100 50  0001 C CNN
-F 3 "" H 1250 6100 50  0001 C CNN
-	1    1250 6100
+P 1200 6100
+F 0 "#PWR?" H 1200 5850 50  0001 C CNN
+F 1 "GNDREF" H 1205 5927 50  0000 C CNN
+F 2 "" H 1200 6100 50  0001 C CNN
+F 3 "" H 1200 6100 50  0001 C CNN
+	1    1200 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -138,11 +127,11 @@ $EndComp
 Wire Wire Line
 	8150 2700 8150 2950
 Wire Wire Line
-	1250 6100 1250 5850
-Text GLabel 1850 5250 2    50   Input ~ 0
+	1200 6100 1200 5850
+Text GLabel 1800 5250 2    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
-	1850 5250 1550 5250
+	1800 5250 1500 5250
 Text GLabel 7950 950  0    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
@@ -150,9 +139,112 @@ Wire Wire Line
 Wire Wire Line
 	8050 950  8050 1100
 $Sheet
-S 5000 1750 500  700 
+S 5500 1500 800  700 
 U 60A4FE38
-F0 "I2C" 50
-F1 "I2C.sch" 50
+F0 "Timer_I2C" 50
+F1 "Timer_I2C.sch" 50
+F2 "X1_ocilador" B L 5500 1950 50 
+F3 "X2_ocilador" B L 5500 2050 50 
+F4 "Serial_CLK" I L 5500 1800 50 
+F5 "Serial_DATA" B L 5500 1700 50 
+F6 "Multifunction_pin" B L 5500 1550 50 
 $EndSheet
+Text Label 2900 5800 0    50   ~ 0
+ICSP_Clk
+Text Label 2900 5700 0    50   ~ 0
+ICSP_Data
+Text Label 1350 3050 2    50   ~ 0
+ICSP_Clk
+Text Label 1350 3150 2    50   ~ 0
+ICSP_Data
+Wire Wire Line
+	1350 3050 1700 3050
+Wire Wire Line
+	1350 3150 1700 3150
+Text Label 4300 3650 0    50   ~ 0
+ICSP_MCLR
+Wire Wire Line
+	4100 3650 4300 3650
+$Comp
+L Connector:Conn_01x05_Male ICSP_Pin
+U 1 1 60A58DC0
+P 2450 5600
+F 0 "ICSP_Pin" H 2558 5981 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 2558 5890 50  0000 C CNN
+F 2 "" H 2450 5600 50  0001 C CNN
+F 3 "~" H 2450 5600 50  0001 C CNN
+	1    2450 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5400 2900 5400
+Text Label 2900 5400 0    50   ~ 0
+ICSP_MCLR
+Wire Wire Line
+	2900 5800 2650 5800
+Wire Wire Line
+	2650 5700 2900 5700
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60A5C611
+P 3500 5600
+F 0 "#PWR?" H 3500 5350 50  0001 C CNN
+F 1 "GNDREF" H 3505 5427 50  0000 C CNN
+F 2 "" H 3500 5600 50  0001 C CNN
+F 3 "" H 3500 5600 50  0001 C CNN
+	1    3500 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 5500 2    50   Input ~ 0
+Vcc_5v
+Wire Wire Line
+	2650 5500 3500 5500
+Wire Wire Line
+	3500 5600 2650 5600
+Text Label 5350 1700 2    50   ~ 0
+Serial_Data
+Text Label 5350 1800 2    50   ~ 0
+Serial_Clk
+Wire Wire Line
+	5500 1800 5350 1800
+Wire Wire Line
+	5500 1700 5350 1700
+Text Label 1550 2450 2    50   ~ 0
+Serial_Data
+Text Label 1550 2550 2    50   ~ 0
+Serial_Clk
+Wire Wire Line
+	1700 2550 1550 2550
+Wire Wire Line
+	1700 2450 1550 2450
+Wire Notes Line
+	5950 4850 5950 6500
+Wire Notes Line
+	5950 6500 700  6500
+Wire Notes Line
+	700  6500 700  4850
+Wire Notes Line
+	700  4850 5950 4850
+Text Notes 750  4850 0    50   ~ 0
+Saídas/entradas
+Wire Notes Line
+	2750 6700 2750 7500
+Wire Notes Line
+	2750 7500 700  7500
+Wire Notes Line
+	700  7500 700  6700
+Wire Notes Line
+	700  6700 2750 6700
+Text Notes 750  6700 0    50   ~ 0
+Alimentação
+Wire Notes Line
+	700  4450 700  650 
+Wire Notes Line
+	700  650  4800 650 
+Wire Notes Line
+	4800 650  4800 4450
+Wire Notes Line
+	4800 4450 700  4450
+Text Notes 750  650  0    50   ~ 0
+PIC18F4550-I/PT
 $EndSCHEMATC

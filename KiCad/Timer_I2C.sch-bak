@@ -64,14 +64,6 @@ Wire Wire Line
 Connection ~ 4500 2500
 Wire Wire Line
 	4500 2500 4600 2500
-Text HLabel 4850 2900 2    50   BiDi ~ 0
-X1_ocilador
-Text HLabel 4850 3100 2    50   BiDi ~ 0
-X2_ocilador
-Wire Wire Line
-	4850 2900 4600 2900
-Wire Wire Line
-	4600 3100 4850 3100
 Text HLabel 3050 2800 0    50   Input ~ 0
 Serial_CLK
 Text HLabel 3050 2900 0    50   BiDi ~ 0
@@ -83,7 +75,7 @@ L Device:R_US R_CLK
 U 1 1 60A54E37
 P 3400 2650
 F 0 "R_CLK" H 3468 2696 50  0000 L CNN
-F 1 "R_US" H 3468 2605 50  0000 L CNN
+F 1 "10k" H 3468 2605 50  0000 L CNN
 F 2 "" V 3440 2640 50  0001 C CNN
 F 3 "~" H 3400 2650 50  0001 C CNN
 	1    3400 2650
@@ -94,10 +86,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 2400 3400 2500
 $Comp
-L Timer:MCP7940N-xSN U?
+L Timer:MCP7940N-xSN Timer_externo
 U 1 1 60A50A9A
 P 4200 3000
-F 0 "U?" H 4200 2511 50  0000 C CNN
+F 0 "Timer_externo" H 4200 2511 50  0000 C CNN
 F 1 "MCP7940N-xSN" H 4200 2420 50  0000 C CNN
 F 2 "" H 4200 3000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf" H 4200 3000 50  0001 C CNN
@@ -123,10 +115,6 @@ Wire Wire Line
 	3300 3400 3600 3400
 Wire Wire Line
 	3600 3100 3800 3100
-Text Notes 5050 2700 0    50   ~ 0
-precisa saber a frequencia do cristal (ocilador) para sabermos a resistencia RD
-Text Notes 4500 2100 0    50   ~ 0
-achar o valor da capacitancia C_Vcc
 Wire Wire Line
 	3750 2900 3800 2900
 Wire Wire Line
@@ -136,7 +124,7 @@ L Device:R_US R_DATA
 U 1 1 60A55734
 P 3750 2550
 F 0 "R_DATA" H 3818 2596 50  0000 L CNN
-F 1 "R_US" H 3818 2505 50  0000 L CNN
+F 1 "10k" H 3818 2505 50  0000 L CNN
 F 2 "" V 3790 2540 50  0001 C CNN
 F 3 "~" H 3750 2550 50  0001 C CNN
 	1    3750 2550
@@ -156,6 +144,62 @@ Wire Wire Line
 	3400 2800 3800 2800
 Wire Wire Line
 	3400 2400 3750 2400
-Text Notes 2950 2150 0    50   ~ 0
-Achar o valor de R_Clk
+Wire Wire Line
+	4600 2900 5550 2900
+Wire Wire Line
+	4600 3100 4600 3200
+Wire Wire Line
+	4600 3200 5550 3200
+$Comp
+L Device:Crystal Cristal_AB38T_32.768KHZ
+U 1 1 60A736EE
+P 5550 3050
+F 0 "Cristal_AB38T_32.768KHZ" V 5596 2919 50  0000 R CNN
+F 1 "32.768k" V 5505 2919 50  0000 R CNN
+F 2 "" H 5550 3050 50  0001 C CNN
+F 3 "~" H 5550 3050 50  0001 C CNN
+	1    5550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C CX1
+U 1 1 60A761D7
+P 6800 3050
+F 0 "CX1" H 6915 3096 50  0000 L CNN
+F 1 "C" H 6915 3005 50  0000 L CNN
+F 2 "" H 6838 2900 50  0001 C CNN
+F 3 "~" H 6800 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CX2
+U 1 1 60A779E3
+P 5550 3350
+F 0 "CX2" H 5435 3304 50  0000 R CNN
+F 1 "C" H 5435 3395 50  0000 R CNN
+F 2 "" H 5588 3200 50  0001 C CNN
+F 3 "~" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 2900 6800 2900
+Connection ~ 5550 2900
+Wire Wire Line
+	6800 3200 6800 3500
+Wire Wire Line
+	6800 3500 5550 3500
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60A784D6
+P 5550 3500
+F 0 "#PWR?" H 5550 3250 50  0001 C CNN
+F 1 "GNDREF" H 5555 3327 50  0000 C CNN
+F 2 "" H 5550 3500 50  0001 C CNN
+F 3 "" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 3500
 $EndSCHEMATC
