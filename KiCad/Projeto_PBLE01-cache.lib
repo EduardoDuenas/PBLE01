@@ -1,29 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 2021-05-14_18-10-03_LD1117DT50TR
-#
-DEF 2021-05-14_18-10-03_LD1117DT50TR CR 0 10 Y Y 1 L N
-F0 "CR" 900 400 60 H V C CNN
-F1 "2021-05-14_18-10-03_LD1117DT50TR" 900 300 60 H V C CNN
-F2 "DPAK_STM" 900 240 60 H I C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- DPAK_STM
- DPAK_STM-M
- DPAK_STM-L
-$ENDFPLIST
-DRAW
-P 2 1 1 5 300 -300 1500 -300 N
-P 2 1 1 5 300 200 300 -300 N
-P 2 1 1 5 1500 -300 1500 200 N
-P 2 1 1 5 1500 200 300 200 N
-X ADJ/GND 1 0 0 300 R 59 59 1 1 U
-X VIN 2 0 -100 300 R 59 59 1 1 U
-X VOUT 3 1800 -100 300 L 59 59 1 1 U
-ENDDRAW
-ENDDEF
-#
 # Connector_Conn_01x05_Male
 #
 DEF Connector_Conn_01x05_Male J 0 40 Y N 1 F N
@@ -101,27 +78,6 @@ P 2 0 1 20 -80 -30 80 -30 N
 P 2 0 1 20 -80 30 80 30 N
 X ~ 1 0 150 110 D 50 50 1 1 P
 X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Crystal
-#
-DEF Device_Crystal Y 0 40 N N 1 F N
-F0 "Y" 0 150 50 H V C CNN
-F1 "Device_Crystal" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -75 0 N
-P 2 0 1 20 -75 -50 -75 50 N
-P 2 0 1 20 75 -50 75 50 N
-P 2 0 1 0 100 0 75 0 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -259,6 +215,70 @@ X VSS 6 -100 -1400 150 U 50 50 1 1 W
 X VDD 7 -100 1400 150 D 50 50 1 1 W
 X RB0/AN12/INT0/FLT0/SDI/SDA 8 -1200 100 150 R 50 50 1 1 B
 X RB1/AN10/INT1/SCK/SCL 9 -1200 0 150 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# My_Lib_AB26T-32.768KHZ
+#
+DEF My_Lib_AB26T-32.768KHZ Y 0 40 Y Y 1 L N
+F0 "Y" 0 200 50 H V L CNN
+F1 "My_Lib_AB26T-32.768KHZ" 0 300 50 H V L CNN
+F2 "Abracon-AB26T-32.768KHZ-*" 0 400 50 H I L CNN
+F3 "https://upverter.com/datasheet/e60e0d8762f6cc85b53388b76005bd605569ec5b.pdf" 0 500 50 H I L CNN
+F4 "±20ppm" 0 600 50 H I L CNN "Frequency Tolerance"
+F5 "Fundamental" 0 700 50 H I L CNN "Operating Mode"
+F6 "Crys" 0 800 50 H I L CNN "category"
+F7 "Crystals/Resonators/Oscillators" 0 900 50 H I L CNN "category 008acd80318bdb4d"
+F8 "Uncategorized" 0 1000 50 H I L CNN "category 6088ad82520dbb4f"
+F9 "Passive Components" 0 1100 50 H I L CNN "category 7542b8484461ae85"
+F10 "Crystals" 0 1200 50 H I L CNN "category 9afb57f1abf5413c"
+F11 "32.768kHz ±20ppm Crystal 12.5pF 35 kOhm -10°C ~ 60°C Through Hole Cylindrical Can, Radial" 0 1300 50 H I L CNN "digikey description"
+F12 "535-9032-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "yes" 0 1500 50 H I L CNN "lead free"
+F14 "799e2e86d1baa452" 0 1600 50 H I L CNN "library id"
+F15 "Abracon" 0 1700 50 H I L CNN "manufacturer"
+F16 "through hole" 0 1800 50 H I L CNN "mounting type"
+F17 "815-AB26T-32.768KHZ" 0 1900 50 H I L CNN "mouser part number"
+F18 "2" 0 2000 50 H I L CNN "num pins"
+F19 "4ab983b7bf86957e" 0 2100 50 H I L CNN "octopart part number"
+F20 "RADIAL" 0 2200 50 H I L CNN "package"
+F21 "yes" 0 2300 50 H I L CNN "rohs"
+F22 "+60°C" 0 2400 50 H I L CNN "temperature range high"
+F23 "-10°C" 0 2500 50 H I L CNN "temperature range low"
+F24 "32.768kHz" 0 2600 50 H I L CNN "frequency"
+F25 "12.5pF" 0 2700 50 H I L CNN "load capacitance"
+DRAW
+P 2 1 1 0 50 80 50 -80 N
+P 2 1 1 0 100 100 100 -100 N
+P 2 1 1 0 100 100 200 100 N
+P 2 1 1 0 200 -100 100 -100 N
+P 2 1 1 0 200 100 200 -100 N
+P 2 1 1 0 250 80 250 -80 N
+X 1 1 0 0 50 R 40 0 1 1 U
+X 2 2 300 0 50 L 40 0 1 1 U
+ENDDRAW
+ENDDEF
+#
+# My_Lib_LD1117DT50TR
+#
+DEF My_Lib_LD1117DT50TR CR 0 10 Y Y 1 L N
+F0 "CR" 900 400 60 H V C CNN
+F1 "My_Lib_LD1117DT50TR" 900 300 60 H V C CNN
+F2 "DPAK_STM" 900 240 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ DPAK_STM
+ DPAK_STM-M
+ DPAK_STM-L
+$ENDFPLIST
+DRAW
+P 2 1 1 5 300 -300 1500 -300 N
+P 2 1 1 5 300 200 300 -300 N
+P 2 1 1 5 1500 -300 1500 200 N
+P 2 1 1 5 1500 200 300 200 N
+X ADJ/GND 1 0 0 300 R 59 59 1 1 U
+X VIN 2 0 -100 300 R 59 59 1 1 U
+X VOUT 3 1800 -100 300 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #

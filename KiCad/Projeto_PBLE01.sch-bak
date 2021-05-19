@@ -139,15 +139,13 @@ Wire Wire Line
 Wire Wire Line
 	8050 950  8050 1100
 $Sheet
-S 5500 1500 800  700 
+S 5500 1500 800  400 
 U 60A4FE38
 F0 "Timer_I2C" 50
 F1 "Timer_I2C.sch" 50
-F2 "X1_ocilador" B L 5500 1950 50 
-F3 "X2_ocilador" B L 5500 2050 50 
-F4 "Serial_CLK" I L 5500 1800 50 
-F5 "Serial_DATA" B L 5500 1700 50 
-F6 "Multifunction_pin" B L 5500 1550 50 
+F2 "Serial_CLK" I L 5500 1800 50 
+F3 "Serial_DATA" B L 5500 1700 50 
+F4 "Multifunction_pin" B L 5500 1550 50 
 $EndSheet
 Text Label 2900 5800 0    50   ~ 0
 ICSP_Clk
@@ -247,4 +245,5 @@ Wire Notes Line
 	4800 4450 700  4450
 Text Notes 750  650  0    50   ~ 0
 PIC18F4550-I/PT
+NoConn ~ 1100 5850
 $EndSCHEMATC
