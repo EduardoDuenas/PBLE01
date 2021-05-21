@@ -46,29 +46,19 @@ F 3 " ~" H 1350 5400 50  0001 C CNN
 	1    1200 5450
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 1450 7000 550  250 
-U 60A0927D
-F0 "Retificador_de_tenção" 50
-F1 "Retificador_de_tenção.sch" 50
-F2 "in" I L 1450 7150 50 
-F3 "out" O R 2000 7150 50 
-$EndSheet
 $Comp
 L power:VCC #PWR?
 U 1 1 60A25356
-P 850 7000
-F 0 "#PWR?" H 850 6850 50  0001 C CNN
-F 1 "VCC" H 865 7173 50  0000 C CNN
-F 2 "" H 850 7000 50  0001 C CNN
-F 3 "" H 850 7000 50  0001 C CNN
-	1    850  7000
+P 1300 7000
+F 0 "#PWR?" H 1300 6850 50  0001 C CNN
+F 1 "VCC" H 1315 7173 50  0000 C CNN
+F 2 "" H 1300 7000 50  0001 C CNN
+F 3 "" H 1300 7000 50  0001 C CNN
+	1    1300 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  7000 850  7150
-Wire Wire Line
-	850  7150 1450 7150
+	1300 7000 1300 7150
 Text GLabel 2250 7150 2    50   BiDi ~ 0
 Vcc_5v
 Wire Wire Line
@@ -132,10 +122,6 @@ Text GLabel 1800 5250 2    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
 	1800 5250 1500 5250
-Text GLabel 7950 950  0    50   Input ~ 0
-Vcc_5v
-Wire Wire Line
-	7950 950  8050 950 
 Wire Wire Line
 	8050 950  8050 1100
 $Sheet
@@ -226,11 +212,7 @@ Wire Notes Line
 Text Notes 750  4850 0    50   ~ 0
 Saídas/entradas
 Wire Notes Line
-	2750 6700 2750 7500
-Wire Notes Line
-	2750 7500 700  7500
-Wire Notes Line
-	700  7500 700  6700
+	2750 7600 700  7600
 Wire Notes Line
 	700  6700 2750 6700
 Text Notes 750  6700 0    50   ~ 0
@@ -264,47 +246,47 @@ Wire Wire Line
 Wire Wire Line
 	9050 1500 9200 1500
 $Comp
-L Device:LED D?
+L Device:LED Leitura_USB
 U 1 1 60A81084
-P 8500 5150
-F 0 "D?" H 8493 4895 50  0000 C CNN
-F 1 "LED" H 8493 4986 50  0000 C CNN
-F 2 "" H 8500 5150 50  0001 C CNN
-F 3 "~" H 8500 5150 50  0001 C CNN
-	1    8500 5150
+P 9050 4750
+F 0 "Leitura_USB" H 9043 4587 50  0000 C CNN
+F 1 "LED" H 9043 4586 50  0001 C CNN
+F 2 "" H 9050 4750 50  0001 C CNN
+F 3 "~" H 9050 4750 50  0001 C CNN
+	1    9050 4750
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED Escrita_USB
 U 1 1 60A84FEF
-P 8500 5500
-F 0 "D?" H 8493 5245 50  0000 C CNN
-F 1 "LED" H 8493 5336 50  0000 C CNN
-F 2 "" H 8500 5500 50  0001 C CNN
-F 3 "~" H 8500 5500 50  0001 C CNN
-	1    8500 5500
+P 9050 5050
+F 0 "Escrita_USB" H 9043 4887 50  0000 C CNN
+F 1 "LED" H 9043 4886 50  0001 C CNN
+F 2 "" H 9050 5050 50  0001 C CNN
+F 3 "~" H 9050 5050 50  0001 C CNN
+	1    9050 5050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 60A859F9
-P 8500 5850
-F 0 "D?" H 8493 5595 50  0000 C CNN
-F 1 "LED" H 8493 5686 50  0000 C CNN
-F 2 "" H 8500 5850 50  0001 C CNN
-F 3 "~" H 8500 5850 50  0001 C CNN
-	1    8500 5850
+P 9050 5350
+F 0 "D?" H 9043 5187 50  0000 C CNN
+F 1 "LED" H 9043 5186 50  0001 C CNN
+F 2 "" H 9050 5350 50  0001 C CNN
+F 3 "~" H 9050 5350 50  0001 C CNN
+	1    9050 5350
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 60A86409
-P 8500 6200
-F 0 "D?" H 8493 5945 50  0000 C CNN
-F 1 "LED" H 8493 6036 50  0000 C CNN
-F 2 "" H 8500 6200 50  0001 C CNN
-F 3 "~" H 8500 6200 50  0001 C CNN
-	1    8500 6200
+P 9050 5650
+F 0 "D?" H 9043 5487 50  0000 C CNN
+F 1 "LED" H 9043 5486 50  0001 C CNN
+F 2 "" H 9050 5650 50  0001 C CNN
+F 3 "~" H 9050 5650 50  0001 C CNN
+	1    9050 5650
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -315,4 +297,186 @@ Wire Notes Line
 	9500 6400 8000 6400
 Wire Notes Line
 	8000 6400 8000 4500
+Text Label 5400 1550 2    50   ~ 0
+Interrupt_timer
+Wire Wire Line
+	5400 1550 5500 1550
+Text Label 1550 2650 2    50   ~ 0
+Interrupt_timer
+Wire Wire Line
+	1550 2650 1700 2650
+Text Label 7150 2400 2    50   ~ 0
+USB_R_Led
+Text Label 7150 2500 2    50   ~ 0
+USB_T_Led
+Wire Wire Line
+	7150 2400 7250 2400
+Wire Wire Line
+	7150 2500 7250 2500
+Text Label 8500 4750 2    50   ~ 0
+USB_R_Led
+Text Label 8500 5050 2    50   ~ 0
+USB_T_Led
+Text GLabel 4200 2250 2    50   Input ~ 0
+VUSB_3.3v
+Text GLabel 7900 950  0    50   Input ~ 0
+VUSB_3.3v
+Wire Wire Line
+	7900 950  8050 950 
+Wire Wire Line
+	4200 2250 4100 2250
+$Sheet
+S 1450 7000 550  250 
+U 60A0927D
+F0 "Retificador_de_tensão" 50
+F1 "Retificador_de_tensão.sch" 50
+F2 "in" I L 1450 7150 50 
+F3 "out" O R 2000 7150 50 
+$EndSheet
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60A9311E
+P 9300 6250
+F 0 "#PWR?" H 9300 6000 50  0001 C CNN
+F 1 "GNDREF" H 9305 6077 50  0000 C CNN
+F 2 "" H 9300 6250 50  0001 C CNN
+F 3 "" H 9300 6250 50  0001 C CNN
+	1    9300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D_PWR
+U 1 1 60A99312
+P 9050 5950
+F 0 "D_PWR" H 9043 5787 50  0000 C CNN
+F 1 "LED" H 9043 5786 50  0001 C CNN
+F 2 "" H 9050 5950 50  0001 C CNN
+F 3 "~" H 9050 5950 50  0001 C CNN
+	1    9050 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R_LED_1
+U 1 1 60A9C520
+P 8700 4750
+F 0 "R_LED_1" V 8587 4750 50  0001 C CNN
+F 1 "100" V 8587 4750 50  0000 C CNN
+F 2 "" V 8740 4740 50  0001 C CNN
+F 3 "~" H 8700 4750 50  0001 C CNN
+	1    8700 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R_LED_2
+U 1 1 60A9D43E
+P 8700 5050
+F 0 "R_LED_2" V 8495 5050 50  0001 C CNN
+F 1 "100" V 8587 5050 50  0000 C CNN
+F 2 "" V 8740 5040 50  0001 C CNN
+F 3 "~" H 8700 5050 50  0001 C CNN
+	1    8700 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R_LED_PWR
+U 1 1 60A9E08E
+P 8700 5950
+F 0 "R_LED_PWR" V 8495 5950 50  0001 C CNN
+F 1 "15" V 8587 5950 50  0000 C CNN
+F 2 "" V 8740 5940 50  0001 C CNN
+F 3 "~" H 8700 5950 50  0001 C CNN
+	1    8700 5950
+	0    1    1    0   
+$EndComp
+Text GLabel 8450 5950 0    50   Input ~ 0
+Vcc_5v
+Wire Wire Line
+	8450 5950 8550 5950
+Wire Wire Line
+	8850 5950 8900 5950
+Wire Wire Line
+	9200 4750 9300 4750
+Wire Wire Line
+	9300 4750 9300 5050
+Wire Wire Line
+	9200 5050 9300 5050
+Connection ~ 9300 5050
+Wire Wire Line
+	9300 5050 9300 5350
+Wire Wire Line
+	9200 5350 9300 5350
+Connection ~ 9300 5350
+Wire Wire Line
+	9300 5350 9300 5650
+Wire Wire Line
+	9200 5650 9300 5650
+Connection ~ 9300 5650
+Wire Wire Line
+	9300 5650 9300 5950
+Wire Wire Line
+	9200 5950 9300 5950
+Connection ~ 9300 5950
+Wire Wire Line
+	9300 5950 9300 6250
+Wire Wire Line
+	8850 4750 8900 4750
+Wire Wire Line
+	8850 5050 8900 5050
+Wire Wire Line
+	8500 4750 8550 4750
+Wire Wire Line
+	8500 5050 8550 5050
+Text Label 4250 1950 0    50   ~ 0
+PIC_Tx
+Text Label 4250 2050 0    50   ~ 0
+PIC_Rx
+Wire Wire Line
+	4250 2050 4100 2050
+Wire Wire Line
+	4100 1950 4250 1950
+Text Label 7100 1400 2    50   ~ 0
+PIC_Tx
+Text Label 7100 1500 2    50   ~ 0
+PIC_Rx
+Wire Wire Line
+	7100 1500 7250 1500
+Wire Wire Line
+	7250 1400 7100 1400
+Text Label 7100 1600 2    50   ~ 0
+RTS_Conversor
+Wire Wire Line
+	7100 1600 7250 1600
+Text Label 1550 2750 2    50   ~ 0
+RTS_Conversor
+Wire Wire Line
+	1550 2750 1700 2750
+Wire Wire Line
+	1300 7150 1450 7150
+$Comp
+L Connector:Jack-DC J?
+U 1 1 60AB724A
+P 1000 7250
+F 0 "J?" H 1057 7575 50  0000 C CNN
+F 1 "Jack-DC" H 1057 7484 50  0000 C CNN
+F 2 "" H 1050 7210 50  0001 C CNN
+F 3 "~" H 1050 7210 50  0001 C CNN
+	1    1000 7250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 7150
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60AC0057
+P 1300 7350
+F 0 "#PWR?" H 1300 7100 50  0001 C CNN
+F 1 "GNDREF" H 1305 7177 50  0000 C CNN
+F 2 "" H 1300 7350 50  0001 C CNN
+F 3 "" H 1300 7350 50  0001 C CNN
+	1    1300 7350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2750 6700 2750 7600
+Wire Notes Line
+	700  6700 700  7600
 $EndSCHEMATC
