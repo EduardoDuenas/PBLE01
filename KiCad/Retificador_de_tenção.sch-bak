@@ -56,23 +56,11 @@ Wire Wire Line
 	6100 3500 6100 3300
 Wire Wire Line
 	5250 3800 5250 4050
-$Comp
-L 2021-05-14_18-10-03:LD1117DT50TR Retificador_de_tensão_5v
-U 1 1 60A15D94
-P 4300 3200
-F 0 "Retificador_de_tensão_5v" H 5200 3587 60  0000 C CNN
-F 1 "LD1117DT50TR" H 5200 3481 60  0000 C CNN
-F 2 "DPAK_STM" H 5200 3440 60  0001 C CNN
-F 3 "" H 4300 3200 60  0000 C CNN
-	1    4300 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5250 3800 6100 3800
 Wire Wire Line
 	4100 3800 5250 3800
 Connection ~ 5250 3800
-Connection ~ 6100 3300
 Wire Wire Line
 	4100 3300 4100 3500
 Wire Wire Line
@@ -108,4 +96,16 @@ Wire Wire Line
 Connection ~ 4100 3300
 Wire Wire Line
 	3500 3300 3600 3300
+$Comp
+L My_Lib:LD1117DT50TR Retificador_de_tensão_5v
+U 1 1 60A5A48D
+P 4300 3200
+F 0 "Retificador_de_tensão_5v" H 5200 3587 60  0000 C CNN
+F 1 "LD1117DT50TR" H 5200 3481 60  0000 C CNN
+F 2 "DPAK_STM" H 5200 3440 60  0001 C CNN
+F 3 "" H 4300 3200 60  0000 C CNN
+	1    4300 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 3300
 $EndSCHEMATC

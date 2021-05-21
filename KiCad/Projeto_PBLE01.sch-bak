@@ -246,4 +246,5 @@ Wire Notes Line
 Text Notes 750  650  0    50   ~ 0
 PIC18F4550-I/PT
 NoConn ~ 1100 5850
+NoConn ~ 400  4700
 $EndSCHEMATC
