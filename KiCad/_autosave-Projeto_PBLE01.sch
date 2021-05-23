@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -320,7 +320,7 @@ USB_T_Led
 Text GLabel 4200 2250 2    50   Input ~ 0
 VUSB_3.3v
 Text GLabel 7900 950  0    50   Input ~ 0
-VUSB_3.3v
+Vcc_5v
 Wire Wire Line
 	7900 950  8050 950 
 Wire Wire Line
@@ -345,11 +345,11 @@ F 3 "" H 9300 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D_PWR
+L Device:LED D_PWR_GREEN
 U 1 1 60A99312
 P 9050 5950
-F 0 "D_PWR" H 9043 5787 50  0000 C CNN
-F 1 "LED" H 9043 5786 50  0001 C CNN
+F 0 "D_PWR_GREEN" H 9043 5787 50  0000 C CNN
+F 1 "G_LED" H 9043 5786 50  0001 C CNN
 F 2 "" H 9050 5950 50  0001 C CNN
 F 3 "~" H 9050 5950 50  0001 C CNN
 	1    9050 5950
@@ -382,7 +382,7 @@ L Device:R_US R_LED_PWR
 U 1 1 60A9E08E
 P 8700 5950
 F 0 "R_LED_PWR" V 8495 5950 50  0001 C CNN
-F 1 "15" V 8587 5950 50  0000 C CNN
+F 1 "200" V 8587 5950 50  0000 C CNN
 F 2 "" V 8740 5940 50  0001 C CNN
 F 3 "~" H 8700 5950 50  0001 C CNN
 	1    8700 5950
@@ -479,4 +479,29 @@ Wire Notes Line
 	2750 6700 2750 7600
 Wire Notes Line
 	700  6700 700  7600
+Text Label 7100 1700 2    50   ~ 0
+CTS_Conversor
+Text Label 4150 2450 0    50   ~ 0
+CTS_Conversor
+Wire Wire Line
+	4100 2450 4150 2450
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60AAEC4B
+P 8500 950
+F 0 "#PWR?" H 8500 700 50  0001 C CNN
+F 1 "GNDREF" H 8505 777 50  0000 C CNN
+F 2 "" H 8500 950 50  0001 C CNN
+F 3 "" H 8500 950 50  0001 C CNN
+	1    8500 950 
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9200 2250 500  300 
+U 60AB2F80
+F0 "Ocilador_Conversor" 50
+F1 "Ocilador_Conversor.sch" 50
+$EndSheet
+Wire Wire Line
+	7100 1700 7250 1700
 $EndSCHEMATC
