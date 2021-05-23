@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name My_Lib)(type Legacy)(uri "C:/Users/Eduardo/Documents/Unifei/PBLE01/PBLE01/projeto_PBLE bibliotecas/My_Lib.lib")(options "")(descr ""))
+  (lib (name "eec(0)")(type Legacy)(uri "C:/Users/Eduardo/Documents/Unifei/PBLE01/PBLE01/projeto PBLE bibliotecas/AO/eec.lib")(options "")(descr ""))
+  (lib (name eec)(type Legacy)(uri "C:/Users/Eduardo/Documents/Unifei/PBLE01/PBLE01/projeto PBLE bibliotecas/IC_STMicroelectronics_LD1117DT33CTR/eec.lib")(options "")(descr ""))
+  (lib (name 2021-05-14_18-10-03)(type Legacy)(uri "C:/Users/Eduardo/Documents/Unifei/PBLE01/PBLE01/projeto PBLE bibliotecas/ul_LD1117DT50TR/KiCAD/2021-05-14_18-10-03/2021-05-14_18-10-03.lib")(options "")(descr ""))
+  (lib (name My_Lib)(type Legacy)(uri "C:/Users/Eduardo/Documents/Unifei/PBLE01/PBLE01/projeto PBLE bibliotecas/My_Lib.lib")(options "")(descr ""))
 )

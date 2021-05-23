@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -15,6 +15,8 @@ Comment4 ""
 $EndDescr
 Text GLabel 4200 2350 1    50   Input ~ 0
 Vcc_5v
+Wire Wire Line
+	4200 2350 4200 2400
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60A51684
@@ -41,6 +43,27 @@ F 3 "" H 4600 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 2600 4300 2500
+Wire Wire Line
+	4300 2500 4500 2500
+$Comp
+L Device:C C_Vcc
+U 1 1 60A52D57
+P 4350 2400
+F 0 "C_Vcc" V 4098 2400 50  0000 C CNN
+F 1 "C" V 4189 2400 50  0000 C CNN
+F 2 "" H 4388 2250 50  0001 C CNN
+F 3 "~" H 4350 2400 50  0001 C CNN
+	1    4350 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 4200 2400
+Wire Wire Line
+	4200 2400 4200 2600
+Wire Wire Line
+	4500 2400 4500 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4500 2500 4600 2500
 Text HLabel 3050 2800 0    50   Input ~ 0
 Serial_CLK
 Text HLabel 3050 2900 0    50   BiDi ~ 0
@@ -202,8 +225,4 @@ Connection ~ 5550 2900
 Wire Wire Line
 	5550 2900 6800 2900
 Connection ~ 5550 3200
-Wire Wire Line
-	4200 2350 4200 2600
-Wire Wire Line
-	4300 2500 4600 2500
 $EndSCHEMATC
