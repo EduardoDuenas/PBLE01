@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Interface_USB:MCP2200-I-SO U?
 U 1 1 609EF1C2
-P 8150 1900
-F 0 "U?" H 8150 1011 50  0000 C CNN
-F 1 "MCP2200-I-SO" H 8150 920 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 8150 750 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/200022228D.pdf" H 8150 900 50  0001 C CNN
-	1    8150 1900
+P 9000 1750
+F 0 "U?" H 9000 861 50  0000 C CNN
+F 1 "MCP2200-I-SO" H 9000 770 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 9000 600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/200022228D.pdf" H 9000 750 50  0001 C CNN
+	1    9000 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -106,16 +106,16 @@ $EndComp
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60A4860B
-P 8150 2950
-F 0 "#PWR?" H 8150 2700 50  0001 C CNN
-F 1 "GNDREF" H 8155 2777 50  0000 C CNN
-F 2 "" H 8150 2950 50  0001 C CNN
-F 3 "" H 8150 2950 50  0001 C CNN
-	1    8150 2950
+P 9000 2800
+F 0 "#PWR?" H 9000 2550 50  0001 C CNN
+F 1 "GNDREF" H 9005 2627 50  0000 C CNN
+F 2 "" H 9000 2800 50  0001 C CNN
+F 3 "" H 9000 2800 50  0001 C CNN
+	1    9000 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 2700 8150 2950
+	9000 2550 9000 2800
 Wire Wire Line
 	1200 6100 1200 5850
 Text GLabel 1800 5250 2    50   Input ~ 0
@@ -123,7 +123,7 @@ Vcc_5v
 Wire Wire Line
 	1800 5250 1500 5250
 Wire Wire Line
-	8050 950  8050 1100
+	8900 800  8900 950 
 $Sheet
 S 5500 1500 800  400 
 U 60A4FE38
@@ -228,7 +228,6 @@ Wire Notes Line
 Text Notes 750  650  0    50   ~ 0
 PIC18F4550-I/PT
 NoConn ~ 1100 5850
-NoConn ~ 400  4700
 Text Label 1700 5450 0    50   ~ 0
 USB_D+
 Text Label 1700 5550 0    50   ~ 0
@@ -237,14 +236,14 @@ Wire Wire Line
 	1500 5450 1700 5450
 Wire Wire Line
 	1500 5550 1700 5550
-Text Label 9200 1300 0    50   ~ 0
+Text Label 10050 1150 0    50   ~ 0
 USB_D+
-Text Label 9200 1500 0    50   ~ 0
+Text Label 10050 1350 0    50   ~ 0
 USB_D-
 Wire Wire Line
-	9050 1300 9200 1300
+	9900 1150 10050 1150
 Wire Wire Line
-	9050 1500 9200 1500
+	9900 1350 10050 1350
 $Comp
 L Device:LED Leitura_USB
 U 1 1 60A81084
@@ -305,24 +304,24 @@ Text Label 1550 2650 2    50   ~ 0
 Interrupt_timer
 Wire Wire Line
 	1550 2650 1700 2650
-Text Label 7150 2400 2    50   ~ 0
+Text Label 8000 2250 2    50   ~ 0
 USB_R_Led
-Text Label 7150 2500 2    50   ~ 0
+Text Label 8000 2350 2    50   ~ 0
 USB_T_Led
 Wire Wire Line
-	7150 2400 7250 2400
+	8000 2250 8100 2250
 Wire Wire Line
-	7150 2500 7250 2500
+	8000 2350 8100 2350
 Text Label 8500 4750 2    50   ~ 0
 USB_R_Led
 Text Label 8500 5050 2    50   ~ 0
 USB_T_Led
 Text GLabel 4200 2250 2    50   Input ~ 0
 VUSB_3.3v
-Text GLabel 7900 950  0    50   Input ~ 0
+Text GLabel 8750 800  0    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
-	7900 950  8050 950 
+	8750 800  8900 800 
 Wire Wire Line
 	4200 2250 4100 2250
 $Sheet
@@ -336,12 +335,12 @@ $EndSheet
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60A9311E
-P 9300 6250
-F 0 "#PWR?" H 9300 6000 50  0001 C CNN
-F 1 "GNDREF" H 9305 6077 50  0000 C CNN
-F 2 "" H 9300 6250 50  0001 C CNN
-F 3 "" H 9300 6250 50  0001 C CNN
-	1    9300 6250
+P 9300 6100
+F 0 "#PWR?" H 9300 5850 50  0001 C CNN
+F 1 "GNDREF" H 9305 5927 50  0000 C CNN
+F 2 "" H 9300 6100 50  0001 C CNN
+F 3 "" H 9300 6100 50  0001 C CNN
+	1    9300 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -359,8 +358,8 @@ $Comp
 L Device:R_US R_LED_1
 U 1 1 60A9C520
 P 8700 4750
-F 0 "R_LED_1" V 8587 4750 50  0001 C CNN
-F 1 "100" V 8587 4750 50  0000 C CNN
+F 0 "R_LED_1" V 8587 4750 50  0000 C CNN
+F 1 "100" V 8587 4750 50  0001 C CNN
 F 2 "" V 8740 4740 50  0001 C CNN
 F 3 "~" H 8700 4750 50  0001 C CNN
 	1    8700 4750
@@ -370,30 +369,26 @@ $Comp
 L Device:R_US R_LED_2
 U 1 1 60A9D43E
 P 8700 5050
-F 0 "R_LED_2" V 8495 5050 50  0001 C CNN
-F 1 "100" V 8587 5050 50  0000 C CNN
+F 0 "R_LED_2" V 8495 5050 50  0000 C CNN
+F 1 "100" V 8587 5050 50  0001 C CNN
 F 2 "" V 8740 5040 50  0001 C CNN
 F 3 "~" H 8700 5050 50  0001 C CNN
 	1    8700 5050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R_LED_PWR
+L Device:R_US G_LED_PWR
 U 1 1 60A9E08E
-P 8700 5950
-F 0 "R_LED_PWR" V 8495 5950 50  0001 C CNN
-F 1 "200" V 8587 5950 50  0000 C CNN
-F 2 "" V 8740 5940 50  0001 C CNN
-F 3 "~" H 8700 5950 50  0001 C CNN
-	1    8700 5950
+P 8550 5950
+F 0 "G_LED_PWR" V 8345 5950 50  0000 C CNN
+F 1 "200" V 8437 5950 50  0001 C CNN
+F 2 "" V 8590 5940 50  0001 C CNN
+F 3 "~" H 8550 5950 50  0001 C CNN
+	1    8550 5950
 	0    1    1    0   
 $EndComp
-Text GLabel 8450 5950 0    50   Input ~ 0
+Text GLabel 8400 5950 0    50   Input ~ 0
 Vcc_5v
-Wire Wire Line
-	8450 5950 8550 5950
-Wire Wire Line
-	8850 5950 8900 5950
 Wire Wire Line
 	9200 4750 9300 4750
 Wire Wire Line
@@ -415,9 +410,6 @@ Wire Wire Line
 	9300 5650 9300 5950
 Wire Wire Line
 	9200 5950 9300 5950
-Connection ~ 9300 5950
-Wire Wire Line
-	9300 5950 9300 6250
 Wire Wire Line
 	8850 4750 8900 4750
 Wire Wire Line
@@ -434,18 +426,18 @@ Wire Wire Line
 	4250 2050 4100 2050
 Wire Wire Line
 	4100 1950 4250 1950
-Text Label 7100 1400 2    50   ~ 0
+Text Label 7950 1250 2    50   ~ 0
 PIC_Tx
-Text Label 7100 1500 2    50   ~ 0
+Text Label 7950 1350 2    50   ~ 0
 PIC_Rx
 Wire Wire Line
-	7100 1500 7250 1500
+	7950 1350 8100 1350
 Wire Wire Line
-	7250 1400 7100 1400
-Text Label 7100 1600 2    50   ~ 0
+	8100 1250 7950 1250
+Text Label 7950 1450 2    50   ~ 0
 RTS_Conversor
 Wire Wire Line
-	7100 1600 7250 1600
+	7950 1450 8100 1450
 Text Label 1550 2750 2    50   ~ 0
 RTS_Conversor
 Wire Wire Line
@@ -479,7 +471,7 @@ Wire Notes Line
 	2750 6700 2750 7600
 Wire Notes Line
 	700  6700 700  7600
-Text Label 7100 1700 2    50   ~ 0
+Text Label 7950 1550 2    50   ~ 0
 CTS_Conversor
 Text Label 4150 2450 0    50   ~ 0
 CTS_Conversor
@@ -488,20 +480,64 @@ Wire Wire Line
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60AAEC4B
-P 8500 950
-F 0 "#PWR?" H 8500 700 50  0001 C CNN
-F 1 "GNDREF" H 8505 777 50  0000 C CNN
-F 2 "" H 8500 950 50  0001 C CNN
-F 3 "" H 8500 950 50  0001 C CNN
-	1    8500 950 
+P 9400 800
+F 0 "#PWR?" H 9400 550 50  0001 C CNN
+F 1 "GNDREF" H 9405 627 50  0000 C CNN
+F 2 "" H 9400 800 50  0001 C CNN
+F 3 "" H 9400 800 50  0001 C CNN
+	1    9400 800 
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 9200 2250 500  300 
+S 10050 2100 500  300 
 U 60AB2F80
 F0 "Ocilador_Conversor" 50
 F1 "Ocilador_Conversor.sch" 50
+F2 "X1" B L 10050 2150 50 
+F3 "X2" B L 10050 2350 50 
 $EndSheet
 Wire Wire Line
-	7100 1700 7250 1700
+	7950 1550 8100 1550
+Wire Wire Line
+	10050 2150 9900 2150
+Wire Wire Line
+	9900 2350 10050 2350
+Text Label 7950 1150 2    50   ~ 0
+RST_Conversor
+Wire Wire Line
+	7950 1150 8100 1150
+Text Label 4150 2550 0    50   ~ 0
+RST_Conversor
+Wire Wire Line
+	4100 2550 4150 2550
+NoConn ~ 8100 1650
+NoConn ~ 8100 1750
+NoConn ~ 8100 1850
+NoConn ~ 8100 1950
+NoConn ~ 8100 2050
+NoConn ~ 8100 2150
+$Comp
+L Device:C Cref
+U 1 1 60ACBD01
+P 9250 800
+F 0 "Cref" V 9090 800 50  0000 C CNN
+F 1 "1pF" V 9089 800 50  0001 C CNN
+F 2 "" H 9288 650 50  0001 C CNN
+F 3 "~" H 9250 800 50  0001 C CNN
+	1    9250 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 800  9100 950 
+Wire Wire Line
+	9300 6100 9300 5950
+Connection ~ 9300 5950
+Wire Wire Line
+	8700 5950 8900 5950
+$Sheet
+S 5300 3000 750  1400
+U 60AF7D01
+F0 "LCD" 50
+F1 "LCD.sch" 50
+$EndSheet
 $EndSCHEMATC
