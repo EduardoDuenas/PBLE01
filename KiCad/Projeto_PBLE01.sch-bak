@@ -473,10 +473,10 @@ Wire Notes Line
 	700  6700 700  7600
 Text Label 7950 1550 2    50   ~ 0
 CTS_Conversor
-Text Label 4150 2450 0    50   ~ 0
+Text Label 4150 1750 0    50   ~ 0
 CTS_Conversor
 Wire Wire Line
-	4100 2450 4150 2450
+	4100 1750 4150 1750
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60AAEC4B
@@ -506,10 +506,10 @@ Text Label 7950 1150 2    50   ~ 0
 RST_Conversor
 Wire Wire Line
 	7950 1150 8100 1150
-Text Label 4150 2550 0    50   ~ 0
+Text Label 4150 1850 0    50   ~ 0
 RST_Conversor
 Wire Wire Line
-	4100 2550 4150 2550
+	4100 1850 4150 1850
 NoConn ~ 8100 1650
 NoConn ~ 8100 1750
 NoConn ~ 8100 1850
@@ -535,9 +535,154 @@ Connection ~ 9300 5950
 Wire Wire Line
 	8700 5950 8900 5950
 $Sheet
-S 5300 3000 750  1400
+S 5500 2550 750  1400
 U 60AF7D01
 F0 "LCD" 50
 F1 "LCD.sch" 50
+F2 "Enable" I R 6250 2700 50 
+F3 "R_or_W" I R 6250 2900 50 
+F4 "RS" I R 6250 3100 50 
+F5 "B0" B L 5500 2750 50 
+F6 "B1" B L 5500 2900 50 
+F7 "B2" B L 5500 3050 50 
+F8 "B3" B L 5500 3200 50 
+F9 "B4" B L 5500 3350 50 
+F10 "B5" B L 5500 3500 50 
+F11 "B6" B L 5500 3650 50 
+F12 "B7" B L 5500 3800 50 
 $EndSheet
+Text Label 5400 2750 2    50   ~ 0
+LCD_B0
+Text Label 5400 2900 2    50   ~ 0
+LCD_B1
+Text Label 5400 3050 2    50   ~ 0
+LCD_B2
+Text Label 5400 3200 2    50   ~ 0
+LCD_B3
+Text Label 5400 3350 2    50   ~ 0
+LCD_B4
+Text Label 5400 3500 2    50   ~ 0
+LCD_B5
+Text Label 5400 3650 2    50   ~ 0
+LCD_B6
+Text Label 5400 3800 2    50   ~ 0
+LCD_B7
+Text Label 6350 3100 0    50   ~ 0
+LCD_RS
+Text Label 6350 2900 0    50   ~ 0
+LCD_RW
+Text Label 6350 2700 0    50   ~ 0
+LCD_ENABLE
+Wire Wire Line
+	6250 2700 6350 2700
+Wire Wire Line
+	6250 2900 6350 2900
+Wire Wire Line
+	6250 3100 6350 3100
+Wire Wire Line
+	5400 2750 5500 2750
+Wire Wire Line
+	5400 2900 5500 2900
+Wire Wire Line
+	5400 3050 5500 3050
+Wire Wire Line
+	5400 3200 5500 3200
+Wire Wire Line
+	5400 3350 5500 3350
+Wire Wire Line
+	5400 3500 5500 3500
+Wire Wire Line
+	5400 3650 5500 3650
+Wire Wire Line
+	5400 3800 5500 3800
+Text Label 4200 2450 0    50   ~ 0
+LCD_B0
+Text Label 4200 2550 0    50   ~ 0
+LCD_B1
+Text Label 4200 2650 0    50   ~ 0
+LCD_B2
+Text Label 4200 2750 0    50   ~ 0
+LCD_B3
+Text Label 4200 2850 0    50   ~ 0
+LCD_B4
+Text Label 4200 2950 0    50   ~ 0
+LCD_B5
+Text Label 4200 3050 0    50   ~ 0
+LCD_B6
+Text Label 4200 3150 0    50   ~ 0
+LCD_B7
+Wire Wire Line
+	4100 2450 4200 2450
+Wire Wire Line
+	4100 2550 4200 2550
+Wire Wire Line
+	4100 2650 4200 2650
+Wire Wire Line
+	4100 2750 4200 2750
+Wire Wire Line
+	4100 2850 4200 2850
+Wire Wire Line
+	4100 2950 4200 2950
+Wire Wire Line
+	4100 3050 4200 3050
+Wire Wire Line
+	4100 3150 4200 3150
+Text Label 4200 3550 0    50   ~ 0
+LCD_RS
+Text Label 4200 3450 0    50   ~ 0
+LCD_RW
+Text Label 4200 3350 0    50   ~ 0
+LCD_ENABLE
+Wire Wire Line
+	4100 3350 4200 3350
+Wire Wire Line
+	4100 3450 4200 3450
+Wire Wire Line
+	4100 3550 4200 3550
+$Comp
+L Connector:Screw_Terminal_01x02 Analog_00
+U 1 1 60B32822
+P 3300 6200
+F 0 "Analog_00" H 3380 6146 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3380 6101 50  0001 L CNN
+F 2 "" H 3300 6200 50  0001 C CNN
+F 3 "~" H 3300 6200 50  0001 C CNN
+	1    3300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 Analog_01
+U 1 1 60B35301
+P 2100 6200
+F 0 "Analog_01" H 2180 6146 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 2018 5966 50  0001 C CNN
+F 2 "" H 2100 6200 50  0001 C CNN
+F 3 "~" H 2100 6200 50  0001 C CNN
+	1    2100 6200
+	1    0    0    -1  
+$EndComp
+Text Label 1550 1450 2    50   ~ 0
+Analog_0
+Text Label 1550 1550 2    50   ~ 0
+Analog_1
+Text Label 1550 1650 2    50   ~ 0
+Analog_2
+Text Label 1550 1750 2    50   ~ 0
+Analog_3
+Text Label 3000 6200 2    50   ~ 0
+Analog_0
+Text Label 3000 6300 2    50   ~ 0
+Analog_1
+Text Label 1800 6200 2    50   ~ 0
+Analog_2
+Text Label 1800 6300 2    50   ~ 0
+Analog_3
+Wire Wire Line
+	3100 6300 3000 6300
+Wire Wire Line
+	3100 6200 3000 6200
+Wire Wire Line
+	1900 6300 1800 6300
+Wire Wire Line
+	1900 6200 1800 6200
 $EndSCHEMATC
