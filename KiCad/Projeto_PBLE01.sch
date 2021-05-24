@@ -102,14 +102,14 @@ Text Label 2900 5800 0    50   ~ 0
 ICSP_Clk
 Text Label 2900 5700 0    50   ~ 0
 ICSP_Data
-Text Label 1350 3050 2    50   ~ 0
+Text Label 1350 3350 2    50   ~ 0
 ICSP_Clk
-Text Label 1350 3150 2    50   ~ 0
+Text Label 1350 3450 2    50   ~ 0
 ICSP_Data
 Wire Wire Line
-	1350 3050 1700 3050
+	1350 3350 1700 3350
 Wire Wire Line
-	1350 3150 1700 3150
+	1350 3450 1700 3450
 Text Label 4200 3650 0    50   ~ 0
 MCLR
 $Comp
@@ -706,4 +706,99 @@ Text Label 4150 1750 0    50   ~ 0
 LCD_ENABLE
 Wire Wire Line
 	4100 1750 4150 1750
+Text Label 4250 1550 0    50   ~ 0
+IO_01
+Text Label 4250 1450 0    50   ~ 0
+IO_00
+Text Label 4250 1650 0    50   ~ 0
+IO_02
+Text Label 4200 3350 0    50   ~ 0
+IO_03
+Text Label 4200 3450 0    50   ~ 0
+IO_04
+Text Label 4200 3550 0    50   ~ 0
+IO_05
+Wire Wire Line
+	4250 1450 4100 1450
+Wire Wire Line
+	4250 1550 4100 1550
+Wire Wire Line
+	4250 1650 4100 1650
+Wire Wire Line
+	4200 3350 4100 3350
+Wire Wire Line
+	4200 3450 4100 3450
+Wire Wire Line
+	4200 3550 4100 3550
+Text Label 4500 5700 0    50   ~ 0
+IO_01
+Text Label 4500 5800 0    50   ~ 0
+IO_00
+Text Label 4500 5600 0    50   ~ 0
+IO_02
+Wire Wire Line
+	4500 5800 4350 5800
+Wire Wire Line
+	4500 5700 4350 5700
+Wire Wire Line
+	4500 5600 4350 5600
+Text Label 4500 5500 0    50   ~ 0
+IO_03
+Text Label 4500 5400 0    50   ~ 0
+IO_04
+Text Label 4500 5300 0    50   ~ 0
+IO_05
+Wire Wire Line
+	4350 5500 4500 5500
+Wire Wire Line
+	4350 5400 4500 5400
+Wire Wire Line
+	4350 5300 4500 5300
+Text Label 1550 2850 2    50   ~ 0
+IO_06
+Wire Wire Line
+	1550 2850 1700 2850
+Text Label 4500 5200 0    50   ~ 0
+IO_06
+Wire Wire Line
+	4350 5200 4500 5200
+$Comp
+L Connector:Conn_01x08_Female IO_Pins
+U 1 1 60D32B7F
+P 4150 5500
+F 0 "IO_Pins" H 4042 4967 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 4042 4966 50  0001 C CNN
+F 2 "" H 4150 5500 50  0001 C CNN
+F 3 "~" H 4150 5500 50  0001 C CNN
+	1    4150 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female Source_Pins
+U 1 1 60D35570
+P 4150 6200
+F 0 "Source_Pins" H 4042 5967 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 4042 5966 50  0001 C CNN
+F 2 "" H 4150 6200 50  0001 C CNN
+F 3 "~" H 4150 6200 50  0001 C CNN
+	1    4150 6200
+	-1   0    0    1   
+$EndComp
+Text GLabel 4500 6100 2    50   BiDi ~ 0
+Vcc_5v
+Wire Wire Line
+	4350 6100 4500 6100
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60D3D5A5
+P 4500 6200
+F 0 "#PWR?" H 4500 5950 50  0001 C CNN
+F 1 "GNDREF" H 4505 6027 50  0000 C CNN
+F 2 "" H 4500 6200 50  0001 C CNN
+F 3 "" H 4500 6200 50  0001 C CNN
+	1    4500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6200 4500 6200
 $EndSCHEMATC
