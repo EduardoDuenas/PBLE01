@@ -25,10 +25,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/39760d.pdf" H 2900 2300 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B J?
+L Connector:USB_B Porta_USB
 U 1 1 609F2570
 P 1200 5450
-F 0 "J?" H 1257 5917 50  0000 C CNN
+F 0 "Porta_USB" H 1257 5917 50  0000 C CNN
 F 1 "USB_B" H 1257 5826 50  0000 C CNN
 F 2 "" H 1350 5400 50  0001 C CNN
 F 3 " ~" H 1350 5400 50  0001 C CNN
@@ -36,22 +36,22 @@ F 3 " ~" H 1350 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0101
 U 1 1 60A25356
-P 1300 7000
-F 0 "#PWR?" H 1300 6850 50  0001 C CNN
-F 1 "VCC" H 1315 7173 50  0000 C CNN
-F 2 "" H 1300 7000 50  0001 C CNN
-F 3 "" H 1300 7000 50  0001 C CNN
-	1    1300 7000
+P 1350 6950
+F 0 "#PWR0101" H 1350 6800 50  0001 C CNN
+F 1 "VCC" H 1365 7123 50  0000 C CNN
+F 2 "" H 1350 6950 50  0001 C CNN
+F 3 "" H 1350 6950 50  0001 C CNN
+	1    1350 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 7000 1300 7150
-Text GLabel 2250 7150 2    50   BiDi ~ 0
+	1350 6950 1350 7100
+Text GLabel 2250 7100 2    50   BiDi ~ 0
 Vcc_5v
 Wire Wire Line
-	2000 7150 2250 7150
+	2000 7100 2250 7100
 Text GLabel 2250 750  0    50   BiDi ~ 0
 Vcc_5v
 Wire Wire Line
@@ -70,10 +70,10 @@ Wire Wire Line
 Wire Wire Line
 	2900 4200 2900 3950
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0102
 U 1 1 60A3638D
 P 2900 4200
-F 0 "#PWR?" H 2900 3950 50  0001 C CNN
+F 0 "#PWR0102" H 2900 3950 50  0001 C CNN
 F 1 "GNDREF" H 2905 4027 50  0000 C CNN
 F 2 "" H 2900 4200 50  0001 C CNN
 F 3 "" H 2900 4200 50  0001 C CNN
@@ -82,10 +82,10 @@ F 3 "" H 2900 4200 50  0001 C CNN
 $EndComp
 Connection ~ 2900 4200
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0103
 U 1 1 60A478EE
 P 1200 6100
-F 0 "#PWR?" H 1200 5850 50  0001 C CNN
+F 0 "#PWR0103" H 1200 5850 50  0001 C CNN
 F 1 "GNDREF" H 1205 5927 50  0000 C CNN
 F 2 "" H 1200 6100 50  0001 C CNN
 F 3 "" H 1200 6100 50  0001 C CNN
@@ -98,56 +98,33 @@ Text GLabel 1800 5250 2    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
 	1800 5250 1500 5250
-Text Label 2900 5800 0    50   ~ 0
+Text Label 2850 5550 0    50   ~ 0
 ICSP_Clk
-Text Label 2900 5700 0    50   ~ 0
+Text Label 2850 5450 0    50   ~ 0
 ICSP_Data
-Text Label 1350 3050 2    50   ~ 0
+Text Label 1350 3350 2    50   ~ 0
 ICSP_Clk
-Text Label 1350 3150 2    50   ~ 0
+Text Label 1350 3450 2    50   ~ 0
 ICSP_Data
 Wire Wire Line
-	1350 3050 1700 3050
+	1350 3350 1700 3350
 Wire Wire Line
-	1350 3150 1700 3150
+	1350 3450 1700 3450
 Text Label 4200 3650 0    50   ~ 0
 MCLR
 $Comp
-L Connector:Conn_01x05_Male ICSP_Pin
-U 1 1 60A58DC0
-P 2450 5600
-F 0 "ICSP_Pin" H 2558 5981 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 2558 5890 50  0000 C CNN
-F 2 "" H 2450 5600 50  0001 C CNN
-F 3 "~" H 2450 5600 50  0001 C CNN
-	1    2450 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5400 2900 5400
-Text Label 2900 5400 0    50   ~ 0
-MCLR
-Wire Wire Line
-	2900 5800 2650 5800
-Wire Wire Line
-	2650 5700 2900 5700
-$Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0104
 U 1 1 60A5C611
-P 3500 5600
-F 0 "#PWR?" H 3500 5350 50  0001 C CNN
-F 1 "GNDREF" H 3505 5427 50  0000 C CNN
-F 2 "" H 3500 5600 50  0001 C CNN
-F 3 "" H 3500 5600 50  0001 C CNN
-	1    3500 5600
+P 3450 5350
+F 0 "#PWR0104" H 3450 5100 50  0001 C CNN
+F 1 "GNDREF" H 3455 5177 50  0000 C CNN
+F 2 "" H 3450 5350 50  0001 C CNN
+F 3 "" H 3450 5350 50  0001 C CNN
+	1    3450 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 5500 2    50   Input ~ 0
+Text GLabel 3450 5250 2    50   Input ~ 0
 Vcc_5v
-Wire Wire Line
-	2650 5500 3500 5500
-Wire Wire Line
-	3500 5600 2650 5600
 Text Label 1550 2450 2    50   ~ 0
 Serial_Data
 Text Label 1550 2550 2    50   ~ 0
@@ -167,10 +144,10 @@ Wire Notes Line
 Text Notes 750  4850 0    50   ~ 0
 Saídas/entradas
 Wire Notes Line
-	2750 7600 700  7600
+	2750 7550 700  7550
 Wire Notes Line
-	700  6700 2750 6700
-Text Notes 750  6700 0    50   ~ 0
+	700  6650 2750 6650
+Text Notes 750  6650 0    50   ~ 0
 Alimentação
 Wire Notes Line
 	700  4450 700  650 
@@ -256,18 +233,18 @@ VUSB_3.3v
 Wire Wire Line
 	4200 2250 4100 2250
 $Sheet
-S 1450 7000 550  250 
+S 1450 6950 550  250 
 U 60A0927D
 F0 "Retificador_de_tensão" 50
 F1 "Retificador_de_tensão.sch" 50
-F2 "in" I L 1450 7150 50 
-F3 "out" O R 2000 7150 50 
+F2 "in" I L 1450 7100 50 
+F3 "out" O R 2000 7100 50 
 $EndSheet
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0105
 U 1 1 60A9311E
 P 10700 6050
-F 0 "#PWR?" H 10700 5800 50  0001 C CNN
+F 0 "#PWR0105" H 10700 5800 50  0001 C CNN
 F 1 "GNDREF" H 10705 5877 50  0000 C CNN
 F 2 "" H 10700 6050 50  0001 C CNN
 F 3 "" H 10700 6050 50  0001 C CNN
@@ -294,17 +271,6 @@ F 1 "100" V 9987 4700 50  0001 C CNN
 F 2 "" V 10140 4690 50  0001 C CNN
 F 3 "~" H 10100 4700 50  0001 C CNN
 	1    10100 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R_LED_2
-U 1 1 60A9D43E
-P 10100 5000
-F 0 "R_LED_2" V 9895 5000 50  0000 C CNN
-F 1 "100" V 9987 5000 50  0001 C CNN
-F 2 "" V 10140 4990 50  0001 C CNN
-F 3 "~" H 10100 5000 50  0001 C CNN
-	1    10100 5000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -368,34 +334,33 @@ RTS_Conversor
 Wire Wire Line
 	1550 2750 1700 2750
 Wire Wire Line
-	1300 7150 1450 7150
+	1300 7100 1350 7100
 $Comp
-L Connector:Jack-DC J?
+L Connector:Jack-DC PWR_Source
 U 1 1 60AB724A
-P 1000 7250
-F 0 "J?" H 1057 7575 50  0000 C CNN
-F 1 "Jack-DC" H 1057 7484 50  0000 C CNN
-F 2 "" H 1050 7210 50  0001 C CNN
-F 3 "~" H 1050 7210 50  0001 C CNN
-	1    1000 7250
+P 1000 7200
+F 0 "PWR_Source" H 1057 7525 50  0000 C CNN
+F 1 "Jack-DC" H 1057 7434 50  0001 C CNN
+F 2 "" H 1050 7160 50  0001 C CNN
+F 3 "~" H 1050 7160 50  0001 C CNN
+	1    1000 7200
 	1    0    0    -1  
 $EndComp
-Connection ~ 1300 7150
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0106
 U 1 1 60AC0057
-P 1300 7350
-F 0 "#PWR?" H 1300 7100 50  0001 C CNN
-F 1 "GNDREF" H 1305 7177 50  0000 C CNN
-F 2 "" H 1300 7350 50  0001 C CNN
-F 3 "" H 1300 7350 50  0001 C CNN
-	1    1300 7350
+P 1300 7300
+F 0 "#PWR0106" H 1300 7050 50  0001 C CNN
+F 1 "GNDREF" H 1305 7127 50  0000 C CNN
+F 2 "" H 1300 7300 50  0001 C CNN
+F 3 "" H 1300 7300 50  0001 C CNN
+	1    1300 7300
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	2750 6700 2750 7600
+	2750 6650 2750 7550
 Wire Notes Line
-	700  6700 700  7600
+	700  6650 700  7550
 Text Label 8700 1350 2    50   ~ 0
 CTS_Conversor
 Text Label 4150 1850 0    50   ~ 0
@@ -439,10 +404,6 @@ Wire Wire Line
 	4100 3050 4200 3050
 Wire Wire Line
 	4100 3150 4200 3150
-Text Label 1550 1850 2    50   ~ 0
-LCD_RS
-Text Label 1550 1950 2    50   ~ 0
-LCD_RW
 $Comp
 L Connector:Screw_Terminal_01x02 Analog_00
 U 1 1 60B32822
@@ -490,10 +451,10 @@ Wire Wire Line
 Wire Wire Line
 	1900 6200 1800 6200
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0107
 U 1 1 60B77770
 P 8200 6050
-F 0 "#PWR?" H 8200 5800 50  0001 C CNN
+F 0 "#PWR0107" H 8200 5800 50  0001 C CNN
 F 1 "GNDREF" H 8205 5877 50  0000 C CNN
 F 2 "" H 8200 6050 50  0001 C CNN
 F 3 "" H 8200 6050 50  0001 C CNN
@@ -698,12 +659,327 @@ F2 "Serial_CLK" I L 9450 2500 50
 F3 "Serial_DATA" B L 9450 2400 50 
 F4 "Multifunction_pin" B L 9450 2250 50 
 $EndSheet
+Text Label 1550 1850 2    50   ~ 0
+IO_03
+Text Label 4200 3450 0    50   ~ 0
+IO_04
+Text Label 4200 3550 0    50   ~ 0
+IO_05
 Wire Wire Line
-	1550 1850 1700 1850
+	4200 3450 4100 3450
+Wire Wire Line
+	4200 3550 4100 3550
+Text Label 4500 5700 0    50   ~ 0
+IO_01
+Text Label 4500 5800 0    50   ~ 0
+IO_00
+Text Label 4500 5600 0    50   ~ 0
+IO_02
+Wire Wire Line
+	4500 5800 4350 5800
+Wire Wire Line
+	4500 5700 4350 5700
+Wire Wire Line
+	4500 5600 4350 5600
+Text Label 4500 5500 0    50   ~ 0
+IO_03
+Text Label 4500 5400 0    50   ~ 0
+IO_04
+Text Label 4500 5300 0    50   ~ 0
+IO_05
+Wire Wire Line
+	4350 5500 4500 5500
+Wire Wire Line
+	4350 5400 4500 5400
+Wire Wire Line
+	4350 5300 4500 5300
+Text Label 1550 2850 2    50   ~ 0
+IO_06
+Wire Wire Line
+	1550 2850 1700 2850
+Text Label 4500 5200 0    50   ~ 0
+IO_06
+Wire Wire Line
+	4350 5200 4500 5200
+$Comp
+L Connector:Conn_01x08_Female IO_Pins
+U 1 1 60D32B7F
+P 4150 5500
+F 0 "IO_Pins" H 4042 4967 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 4042 4966 50  0001 C CNN
+F 2 "" H 4150 5500 50  0001 C CNN
+F 3 "~" H 4150 5500 50  0001 C CNN
+	1    4150 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female Source_Pins
+U 1 1 60D35570
+P 4150 6200
+F 0 "Source_Pins" H 4042 5967 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 4042 5966 50  0001 C CNN
+F 2 "" H 4150 6200 50  0001 C CNN
+F 3 "~" H 4150 6200 50  0001 C CNN
+	1    4150 6200
+	-1   0    0    1   
+$EndComp
+Text GLabel 4500 6100 2    50   BiDi ~ 0
+Vcc_5v
+Wire Wire Line
+	4350 6100 4500 6100
+$Comp
+L power:GNDREF #PWR0108
+U 1 1 60D3D5A5
+P 4500 6200
+F 0 "#PWR0108" H 4500 5950 50  0001 C CNN
+F 1 "GNDREF" H 4505 6027 50  0000 C CNN
+F 2 "" H 4500 6200 50  0001 C CNN
+F 3 "" H 4500 6200 50  0001 C CNN
+	1    4500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6200 4500 6200
+Text Label 1550 1950 2    50   ~ 0
+LCD_RS
+Text Label 1550 2050 2    50   ~ 0
+LCD_RW
 Wire Wire Line
 	1550 1950 1700 1950
+Wire Wire Line
+	1550 2050 1700 2050
+Wire Wire Line
+	4100 1750 4150 1750
 Text Label 4150 1750 0    50   ~ 0
 LCD_ENABLE
 Wire Wire Line
-	4100 1750 4150 1750
+	4250 1650 4100 1650
+Wire Wire Line
+	4250 1550 4100 1550
+Wire Wire Line
+	4250 1450 4100 1450
+Text Label 4250 1650 0    50   ~ 0
+IO_02
+Text Label 4250 1450 0    50   ~ 0
+IO_00
+Text Label 4250 1550 0    50   ~ 0
+IO_01
+Connection ~ 1350 7100
+Wire Wire Line
+	1350 7100 1450 7100
+$Comp
+L Device:R_US R_LED_2
+U 1 1 60B24271
+P 10100 5000
+F 0 "R_LED_2" V 9987 5000 50  0000 C CNN
+F 1 "100" V 9987 5000 50  0001 C CNN
+F 2 "" V 10140 4990 50  0001 C CNN
+F 3 "~" H 10100 5000 50  0001 C CNN
+	1    10100 5000
+	0    1    1    0   
+$EndComp
+NoConn ~ 1700 3550
+Text Label 1350 3650 2    50   ~ 0
+ICSP_RST
+Wire Wire Line
+	1350 3650 1700 3650
+Text Label 2850 5150 0    50   ~ 0
+ICSP_RST
+$Comp
+L Connector:Conn_01x06_Male ICSP_IO
+U 1 1 60B42D02
+P 2400 5350
+F 0 "ICSP_IO" H 2508 5639 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 2508 5640 50  0001 C CNN
+F 2 "" H 2400 5350 50  0001 C CNN
+F 3 "~" H 2400 5350 50  0001 C CNN
+	1    2400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5150 2850 5150
+Wire Wire Line
+	2600 5250 3450 5250
+Wire Wire Line
+	3450 5350 2600 5350
+Wire Wire Line
+	2600 5450 2850 5450
+Wire Wire Line
+	2600 5550 2850 5550
+Text Label 1550 2950 2    50   ~ 0
+ICSP_Enable
+Wire Wire Line
+	1550 2950 1700 2950
+Text Label 2850 5650 0    50   ~ 0
+ICSP_Enable
+Wire Wire Line
+	2600 5650 2850 5650
+$Comp
+L Switch:SW_Push B0
+U 1 1 60B7BD90
+P 4400 7200
+F 0 "B0" V 4400 7348 50  0000 L CNN
+F 1 "SW_Push" V 4445 7348 50  0001 L CNN
+F 2 "" H 4400 7400 50  0001 C CNN
+F 3 "~" H 4400 7400 50  0001 C CNN
+	1    4400 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push B1
+U 1 1 60B8B333
+P 4700 7200
+F 0 "B1" V 4700 7348 50  0000 L CNN
+F 1 "SW_Push" V 4745 7348 50  0001 L CNN
+F 2 "" H 4700 7400 50  0001 C CNN
+F 3 "~" H 4700 7400 50  0001 C CNN
+	1    4700 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push B2
+U 1 1 60B910C7
+P 5000 7200
+F 0 "B2" V 5000 7348 50  0000 L CNN
+F 1 "SW_Push" V 5045 7348 50  0001 L CNN
+F 2 "" H 5000 7400 50  0001 C CNN
+F 3 "~" H 5000 7400 50  0001 C CNN
+	1    5000 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push B3
+U 1 1 60B96D61
+P 5300 7200
+F 0 "B3" V 5300 7348 50  0000 L CNN
+F 1 "SW_Push" V 5345 7348 50  0001 L CNN
+F 2 "" H 5300 7400 50  0001 C CNN
+F 3 "~" H 5300 7400 50  0001 C CNN
+	1    5300 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push B4
+U 1 1 60B9C90B
+P 5600 7200
+F 0 "B4" V 5600 7348 50  0000 L CNN
+F 1 "SW_Push" V 5645 7348 50  0001 L CNN
+F 2 "" H 5600 7400 50  0001 C CNN
+F 3 "~" H 5600 7400 50  0001 C CNN
+	1    5600 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R_B1
+U 1 1 60BB9B41
+P 4550 7000
+F 0 "R_B1" H 4618 7046 50  0000 L CNN
+F 1 "330" H 4618 6955 50  0000 L CNN
+F 2 "" V 4590 6990 50  0001 C CNN
+F 3 "~" H 4550 7000 50  0001 C CNN
+	1    4550 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R_B2
+U 1 1 60BBF851
+P 4850 7000
+F 0 "R_B2" H 4918 7046 50  0000 L CNN
+F 1 "620" H 4918 6955 50  0000 L CNN
+F 2 "" V 4890 6990 50  0001 C CNN
+F 3 "~" H 4850 7000 50  0001 C CNN
+	1    4850 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R_B3
+U 1 1 60BC5450
+P 5150 7000
+F 0 "R_B3" H 5218 7046 50  0000 L CNN
+F 1 "1k" H 5218 6955 50  0000 L CNN
+F 2 "" V 5190 6990 50  0001 C CNN
+F 3 "~" H 5150 7000 50  0001 C CNN
+	1    5150 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R_B4
+U 1 1 60BCAF0D
+P 5450 7000
+F 0 "R_B4" H 5518 7046 50  0000 L CNN
+F 1 "3.3k" H 5518 6955 50  0000 L CNN
+F 2 "" V 5490 6990 50  0001 C CNN
+F 3 "~" H 5450 7000 50  0001 C CNN
+	1    5450 7000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3850 7000 0    50   Input ~ 0
+Vcc_5v
+Wire Wire Line
+	3850 7000 4100 7000
+$Comp
+L power:GNDREF #PWR0109
+U 1 1 60BDCB3A
+P 4400 7400
+F 0 "#PWR0109" H 4400 7150 50  0001 C CNN
+F 1 "GNDREF" H 4405 7227 50  0000 C CNN
+F 2 "" H 4400 7400 50  0001 C CNN
+F 3 "" H 4400 7400 50  0001 C CNN
+	1    4400 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 7400 4700 7400
+Connection ~ 4400 7400
+Wire Wire Line
+	4700 7400 5000 7400
+Connection ~ 4700 7400
+Wire Wire Line
+	5000 7400 5300 7400
+Connection ~ 5000 7400
+Wire Wire Line
+	5300 7400 5600 7400
+Connection ~ 5300 7400
+Connection ~ 4400 7000
+Connection ~ 4700 7000
+Connection ~ 5000 7000
+Connection ~ 5300 7000
+Text Label 3950 6900 2    50   ~ 0
+Analog_KB
+$Comp
+L Device:R_US R_B0
+U 1 1 60BD0F0C
+P 4250 7000
+F 0 "R_B0" H 4318 7046 50  0000 L CNN
+F 1 "2k" H 4318 6955 50  0000 L CNN
+F 2 "" V 4290 6990 50  0001 C CNN
+F 3 "~" H 4250 7000 50  0001 C CNN
+	1    4250 7000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 6900 4100 6900
+Wire Wire Line
+	4100 6900 4100 6700
+Wire Wire Line
+	4100 6700 4400 6700
+Wire Wire Line
+	4400 6700 4400 7000
+Wire Notes Line
+	3200 6650 3200 7650
+Wire Notes Line
+	3200 7650 5950 7650
+Wire Notes Line
+	5950 7650 5950 6650
+Wire Notes Line
+	5950 6650 3200 6650
+Text Notes 3250 6650 0    50   ~ 0
+Teclado
+NoConn ~ 1700 2250
+Text Label 4200 3350 0    50   ~ 0
+Analog_KB
+Wire Wire Line
+	4100 3350 4200 3350
+Wire Wire Line
+	1550 1850 1700 1850
 $EndSCHEMATC
