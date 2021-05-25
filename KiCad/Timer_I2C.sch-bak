@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -75,23 +75,21 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf" H 4200 3000 
 $EndComp
 Text HLabel 3050 3100 0    50   BiDi ~ 0
 Multifunction_pin
-Text GLabel 3300 3400 0    50   Input ~ 0
+Text GLabel 3250 3400 0    50   Input ~ 0
 Vcc_5v
 $Comp
-L Device:R_US 10k
+L Device:R_US R_MFP
 U 1 1 60A57A7B
-P 3600 3250
-F 0 "10k" H 3668 3296 50  0000 L CNN
-F 1 "R_US" H 3668 3205 50  0000 L CNN
-F 2 "" V 3640 3240 50  0001 C CNN
-F 3 "~" H 3600 3250 50  0001 C CNN
-	1    3600 3250
+P 3550 3250
+F 0 "R_MFP" H 3618 3296 50  0000 L CNN
+F 1 "10k" H 3618 3205 50  0000 L CNN
+F 2 "" V 3590 3240 50  0001 C CNN
+F 3 "~" H 3550 3250 50  0001 C CNN
+	1    3550 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 3400 3600 3400
-Wire Wire Line
-	3600 3100 3800 3100
+	3250 3400 3550 3400
 Wire Wire Line
 	3750 2900 3800 2900
 Wire Wire Line
@@ -113,8 +111,7 @@ Wire Wire Line
 	3050 2900 3750 2900
 Connection ~ 3750 2900
 Wire Wire Line
-	3050 3100 3600 3100
-Connection ~ 3600 3100
+	3050 3100 3550 3100
 Connection ~ 3400 2400
 Connection ~ 3400 2800
 Wire Wire Line
@@ -206,4 +203,7 @@ Wire Wire Line
 	4200 2350 4200 2600
 Wire Wire Line
 	4300 2500 4600 2500
+Connection ~ 3550 3100
+Wire Wire Line
+	3550 3100 3800 3100
 $EndSCHEMATC
