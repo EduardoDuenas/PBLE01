@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -98,9 +98,9 @@ Text GLabel 1800 5250 2    50   Input ~ 0
 Vcc_5v
 Wire Wire Line
 	1800 5250 1500 5250
-Text Label 2850 5550 0    50   ~ 0
+Text Label 2750 5450 0    50   ~ 0
 ICSP_Clk
-Text Label 2850 5450 0    50   ~ 0
+Text Label 2750 5350 0    50   ~ 0
 ICSP_Data
 Text Label 1350 3350 2    50   ~ 0
 ICSP_Clk
@@ -115,15 +115,15 @@ MCLR
 $Comp
 L power:GNDREF #PWR0104
 U 1 1 60A5C611
-P 3450 5350
-F 0 "#PWR0104" H 3450 5100 50  0001 C CNN
-F 1 "GNDREF" H 3455 5177 50  0000 C CNN
-F 2 "" H 3450 5350 50  0001 C CNN
-F 3 "" H 3450 5350 50  0001 C CNN
-	1    3450 5350
+P 3350 5250
+F 0 "#PWR0104" H 3350 5000 50  0001 C CNN
+F 1 "GNDREF" H 3355 5077 50  0000 C CNN
+F 2 "" H 3350 5250 50  0001 C CNN
+F 3 "" H 3350 5250 50  0001 C CNN
+	1    3350 5250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 5250 2    50   Input ~ 0
+Text GLabel 3350 5150 2    50   Input ~ 0
 Vcc_5v
 Text Label 1550 2450 2    50   ~ 0
 Serial_Data
@@ -407,23 +407,23 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 Analog_00
 U 1 1 60B32822
-P 3300 6200
-F 0 "Analog_00" H 3380 6146 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 3380 6101 50  0001 L CNN
-F 2 "" H 3300 6200 50  0001 C CNN
-F 3 "~" H 3300 6200 50  0001 C CNN
-	1    3300 6200
+P 3250 5800
+F 0 "Analog_00" H 3330 5746 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3330 5701 50  0001 L CNN
+F 2 "" H 3250 5800 50  0001 C CNN
+F 3 "~" H 3250 5800 50  0001 C CNN
+	1    3250 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 Analog_01
 U 1 1 60B35301
-P 2100 6200
-F 0 "Analog_01" H 2180 6146 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 2018 5966 50  0001 C CNN
-F 2 "" H 2100 6200 50  0001 C CNN
-F 3 "~" H 2100 6200 50  0001 C CNN
-	1    2100 6200
+P 3250 6200
+F 0 "Analog_01" H 3330 6146 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3168 5966 50  0001 C CNN
+F 2 "" H 3250 6200 50  0001 C CNN
+F 3 "~" H 3250 6200 50  0001 C CNN
+	1    3250 6200
 	1    0    0    -1  
 $EndComp
 Text Label 1550 1450 2    50   ~ 0
@@ -434,22 +434,14 @@ Text Label 1550 1650 2    50   ~ 0
 Analog_2
 Text Label 1550 1750 2    50   ~ 0
 Analog_3
-Text Label 3000 6200 2    50   ~ 0
+Text Label 2450 5800 2    50   ~ 0
 Analog_0
-Text Label 3000 6300 2    50   ~ 0
+Text Label 2450 5900 2    50   ~ 0
 Analog_1
-Text Label 1800 6200 2    50   ~ 0
-Analog_2
-Text Label 1800 6300 2    50   ~ 0
-Analog_3
 Wire Wire Line
-	3100 6300 3000 6300
+	2550 5900 2450 5900
 Wire Wire Line
-	3100 6200 3000 6200
-Wire Wire Line
-	1900 6300 1800 6300
-Wire Wire Line
-	1900 6200 1800 6200
+	2550 5800 2450 5800
 $Comp
 L power:GNDREF #PWR0107
 U 1 1 60B77770
@@ -783,37 +775,37 @@ Text Label 1350 3650 2    50   ~ 0
 ICSP_RST
 Wire Wire Line
 	1350 3650 1700 3650
-Text Label 2850 5150 0    50   ~ 0
+Text Label 2750 5050 0    50   ~ 0
 ICSP_RST
 $Comp
 L Connector:Conn_01x06_Male ICSP_IO
 U 1 1 60B42D02
-P 2400 5350
-F 0 "ICSP_IO" H 2508 5639 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 2508 5640 50  0001 C CNN
-F 2 "" H 2400 5350 50  0001 C CNN
-F 3 "~" H 2400 5350 50  0001 C CNN
-	1    2400 5350
+P 2300 5250
+F 0 "ICSP_IO" H 2408 5539 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 2408 5540 50  0001 C CNN
+F 2 "" H 2300 5250 50  0001 C CNN
+F 3 "~" H 2300 5250 50  0001 C CNN
+	1    2300 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 5150 2850 5150
+	2500 5050 2750 5050
 Wire Wire Line
-	2600 5250 3450 5250
+	2500 5150 3350 5150
 Wire Wire Line
-	3450 5350 2600 5350
+	3350 5250 2500 5250
 Wire Wire Line
-	2600 5450 2850 5450
+	2500 5350 2750 5350
 Wire Wire Line
-	2600 5550 2850 5550
+	2500 5450 2750 5450
 Text Label 1550 2950 2    50   ~ 0
 ICSP_Enable
 Wire Wire Line
 	1550 2950 1700 2950
-Text Label 2850 5650 0    50   ~ 0
+Text Label 2750 5550 0    50   ~ 0
 ICSP_Enable
 Wire Wire Line
-	2600 5650 2850 5650
+	2500 5550 2750 5550
 $Comp
 L Switch:SW_Push B0
 U 1 1 60B7BD90
@@ -982,4 +974,21 @@ Wire Wire Line
 	4100 3350 4200 3350
 Wire Wire Line
 	1550 1850 1700 1850
+$Sheet
+S 2550 5700 500  700 
+U 60B29ED3
+F0 "LM358" 50
+F1 "LM358.sch" 50
+$EndSheet
+$Sheet
+S 6800 2550 700  550 
+U 60B32A3D
+F0 "Potenciometro" 50
+F1 "Potenciometro.sch" 50
+F2 "Saida_Analog" B L 6800 2800 50 
+$EndSheet
+Text Label 6700 2800 2    50   ~ 0
+Analog_2
+Wire Wire Line
+	6700 2800 6800 2800
 $EndSCHEMATC
