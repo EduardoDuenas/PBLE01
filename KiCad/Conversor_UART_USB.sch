@@ -88,10 +88,10 @@ $EndComp
 Wire Wire Line
 	2550 3000 2550 2900
 $Comp
-L Device:CP1 C_Reset
+L Device:CP1 C_Reset_Conversor
 U 1 1 60BE969F
 P 2550 2750
-F 0 "C_Reset" H 2665 2796 50  0000 L CNN
+F 0 "C_Reset_Conversor" H 2665 2796 50  0000 L CNN
 F 1 "1uF" H 2665 2705 50  0000 L CNN
 F 2 "" H 2550 2750 50  0001 C CNN
 F 3 "~" H 2550 2750 50  0001 C CNN

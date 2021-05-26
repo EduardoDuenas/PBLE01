@@ -143,10 +143,6 @@ Wire Notes Line
 	700  4850 5950 4850
 Text Notes 750  4850 0    50   ~ 0
 Saídas/entradas
-Wire Notes Line
-	2750 7550 700  7550
-Wire Notes Line
-	700  6650 2750 6650
 Text Notes 750  6650 0    50   ~ 0
 Alimentação
 Wire Notes Line
@@ -357,10 +353,6 @@ F 3 "" H 1300 7300 50  0001 C CNN
 	1    1300 7300
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	2750 6650 2750 7550
-Wire Notes Line
-	700  6650 700  7550
 Text Label 8700 1350 2    50   ~ 0
 CTS_Conversor
 Text Label 4150 1850 0    50   ~ 0
@@ -991,4 +983,64 @@ Text Label 6700 2800 2    50   ~ 0
 Analog_2
 Wire Wire Line
 	6700 2800 6800 2800
+Wire Notes Line
+	3100 6650 3100 7650
+Wire Notes Line
+	3100 7650 700  7650
+Wire Notes Line
+	700  6650 3100 6650
+Wire Notes Line
+	700  6650 700  7650
+Wire Notes Line
+	6050 7650 6850 7650
+Wire Notes Line
+	6850 7650 6850 6650
+Wire Notes Line
+	6850 6650 6050 6650
+Wire Notes Line
+	6050 6650 6050 7650
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B3344B
+P 6250 6850
+F 0 "#FLG?" H 6250 6925 50  0001 C CNN
+F 1 "PWR_FLAG" V 6250 6978 50  0000 L CNN
+F 2 "" H 6250 6850 50  0001 C CNN
+F 3 "~" H 6250 6850 50  0001 C CNN
+	1    6250 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B33451
+P 6250 7450
+F 0 "#FLG?" H 6250 7525 50  0001 C CNN
+F 1 "PWR_FLAG" V 6250 7578 50  0000 L CNN
+F 2 "" H 6250 7450 50  0001 C CNN
+F 3 "~" H 6250 7450 50  0001 C CNN
+	1    6250 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B33457
+P 6250 6850
+F 0 "#PWR?" H 6250 6600 50  0001 C CNN
+F 1 "GNDREF" H 6255 6677 50  0000 C CNN
+F 2 "" H 6250 6850 50  0001 C CNN
+F 3 "" H 6250 6850 50  0001 C CNN
+	1    6250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60B3345D
+P 6250 7450
+F 0 "#PWR?" H 6250 7300 50  0001 C CNN
+F 1 "VCC" H 6265 7623 50  0000 C CNN
+F 2 "" H 6250 7450 50  0001 C CNN
+F 3 "" H 6250 7450 50  0001 C CNN
+	1    6250 7450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
