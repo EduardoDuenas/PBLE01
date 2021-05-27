@@ -1,4 +1,4 @@
-Relatório de ERC (27/05/2021 15:14:09, Codificação UTF8 )
+Relatório de ERC (27/05/2021 16:59:15, Codificação UTF8 )
 
 ***** Folha /
 ErrType(5): Problema de conflito entre pinos. Gravidade: erro
@@ -12,12 +12,11 @@ ErrType(4): Problema de conflito entre pinos. Gravidade: alerta
     @(157,48 mm, 151,13 mm): pino 1 (Saída de alimentação) do componente #FLG0104 (rede 8).
 
 ***** Folha /Retificador_de_tensão/
-ErrType(4): Problema de conflito entre pinos. Gravidade: alerta
-    @(109,22 mm, 81,28 mm): Pino 1 (Bidirecional) do componente Retificador_de_tensão_5v1 está conectado a 
-    @(30,48 mm, 148,59 mm): pino 4 (Saída de alimentação) do componente Porta_USB1 (rede 1).
 ErrType(5): Problema de conflito entre pinos. Gravidade: erro
-    @(154,94 mm, 83,82 mm): Pino 3 (Saí­da) do componente Retificador_de_tensão_5v1 está conectado a 
+    @(154,94 mm, 83,82 mm): Pino 3 (Saída de alimentação) do componente Retificador_de_tensão_5v1 está conectado a 
     @(38,10 mm, 133,35 mm): pino 1 (Saída de alimentação) do componente Porta_USB1 (rede 2).
+ErrType(3): Pino conectado a outros pinos, mas não conduzido por nenhum pino
+    @(109,22 mm, 83,82 mm): Pino 2 (Alimentação) do componente Retificador_de_tensão_5v1 não está conduzindo (Rede 69)
 
 ***** Folha /Conversor_UART_USB/
 ErrType(3): Pino conectado a outros pinos, mas não conduzido por nenhum pino
@@ -32,12 +31,9 @@ ErrType(3): Pino conectado a outros pinos, mas não conduzido por nenhum pino
     @(134,62 mm, 76,20 mm): Pino 3 (Alimentação) do componente LCD1 não está conduzindo (Rede 73)
 
 ***** Folha /Timer_I2C/
-ErrType(4): Problema de conflito entre pinos. Gravidade: alerta
-    @(116,84 mm, 73,66 mm): Pino 1 (Entrada) do componente Timer_externo1 está conectado a 
-    @(140,97 mm, 73,66 mm): pino 1 (Não especificado) do componente Cristal-AB26T-32.768KHZ1 (rede 70).
-ErrType(4): Problema de conflito entre pinos. Gravidade: alerta
-    @(140,97 mm, 81,28 mm): Pino 2 (Passivo) do componente CX2 está conectado a 
-    @(140,97 mm, 81,28 mm): pino 2 (Não especificado) do componente Cristal-AB26T-32.768KHZ1 (rede 71).
+ErrType(5): Problema de conflito entre pinos. Gravidade: erro
+    @(116,84 mm, 78,74 mm): Pino 2 (Saí­da) do componente Timer_externo1 está conectado a 
+    @(140,97 mm, 81,28 mm): pino 2 (Saída de alimentação) do componente Cristal-AB26T-32.768KHZ1 (rede 71).
 
 ***** Folha /Potenciometro/
 
@@ -45,4 +41,4 @@ ErrType(4): Problema de conflito entre pinos. Gravidade: alerta
 
 ***** Folha /LM358/
 
-** Mensagens ERC: 10 Erros 3 Advertências 7
+** Mensagens ERC: 9 Erros 4 Advertências 5
