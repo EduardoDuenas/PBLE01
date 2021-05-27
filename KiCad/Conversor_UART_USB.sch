@@ -18,8 +18,8 @@ L Interface_USB:MCP2200-I-SO U?
 U 1 1 60BE6306
 P 4950 3200
 AR Path="/60BE6306" Ref="U?"  Part="1" 
-AR Path="/60BE4F2F/60BE6306" Ref="Conversor_UART_USB"  Part="1" 
-F 0 "Conversor_UART_USB" H 4950 2311 50  0000 C CNN
+AR Path="/60BE4F2F/60BE6306" Ref="Conversor_UART_USB1"  Part="1" 
+F 0 "Conversor_UART_USB1" H 4950 2311 50  0000 C CNN
 F 1 "MCP2200-I-SO" H 4950 2220 50  0000 C CNN
 F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 4950 2050 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/200022228D.pdf" H 4950 2200 50  0001 C CNN
@@ -88,10 +88,10 @@ $EndComp
 Wire Wire Line
 	2550 3000 2550 2900
 $Comp
-L Device:CP1 C_Reset_Conversor
+L Device:CP1 C_Reset_Conversor1
 U 1 1 60BE969F
 P 2550 2750
-F 0 "C_Reset_Conversor" H 2665 2796 50  0000 L CNN
+F 0 "C_Reset_Conversor1" H 2665 2796 50  0000 L CNN
 F 1 "1uF" H 2665 2705 50  0000 L CNN
 F 2 "" H 2550 2750 50  0001 C CNN
 F 3 "~" H 2550 2750 50  0001 C CNN
