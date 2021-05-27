@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -625,7 +625,7 @@ F3 "Serial_DATA" B L 9450 2400 50
 F4 "Multifunction_pin" B L 9450 2250 50 
 $EndSheet
 Text Label 1550 1850 2    50   ~ 0
-IO_03
+IO_03_LED_4
 Text Label 1550 3050 2    50   ~ 0
 IO_04
 Text Label 1550 3150 2    50   ~ 0
@@ -720,11 +720,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 1450 4100 1450
 Text Label 1550 1750 2    50   ~ 0
-IO_02
+IO_02_LED_3
 Text Label 4250 1450 0    50   ~ 0
-IO_00
+IO_00_LED_1
 Text Label 4250 1550 0    50   ~ 0
-IO_01
+IO_01_LED_2
 Connection ~ 1350 7100
 Wire Wire Line
 	1350 7100 1450 7100
@@ -1118,13 +1118,13 @@ Wire Wire Line
 Wire Wire Line
 	1550 3050 1700 3050
 Text Label 4200 3450 0    50   ~ 0
-IO_06
+IO_07
 Wire Wire Line
 	4100 3450 4200 3450
 Wire Wire Line
 	1550 3150 1700 3150
 Text Label 4200 3550 0    50   ~ 0
-IO_07
+IO_08
 Wire Wire Line
 	4100 3550 4200 3550
 Text Label 4500 5100 0    50   ~ 0
@@ -1147,4 +1147,52 @@ Text Notes 5550 650  0    50   ~ 0
 Periféricos
 Text Notes 6100 6650 0    50   ~ 0
 PWR_FLAGs
+Wire Wire Line
+	4100 1650 4250 1650
+Text Label 4250 1650 0    50   ~ 0
+PWM
+Wire Notes Line
+	5150 3700 6900 3700
+Wire Notes Line
+	6900 3700 6900 4650
+Wire Notes Line
+	6900 4650 5150 4650
+Wire Notes Line
+	5150 4650 5150 3700
+Text Notes 5200 3700 0    50   ~ 0
+PWM\n
+$Sheet
+S 5600 3900 850  500 
+U 60B33116
+F0 "filtro_PWM" 50
+F1 "filtro_PWM.sch" 50
+$EndSheet
+Text HLabel 5600 4150 2    50   Input ~ 0
+PWM_In
+Wire Wire Line
+	5600 4150 5350 4150
+Text HLabel 6450 4150 0    50   Output ~ 0
+PWM_Out
+Wire Wire Line
+	6450 4150 6700 4150
+Text Label 5350 4150 0    50   ~ 0
+PWM
+Text Label 6700 4150 0    50   ~ 0
+PWM_Out
+Wire Wire Line
+	9950 4700 9900 4700
+Text Label 9900 4700 2    50   ~ 0
+IO_00_LED_1
+Wire Wire Line
+	9950 5000 9900 5000
+Wire Wire Line
+	9950 5600 9900 5600
+Text Label 9900 5000 2    50   ~ 0
+IO_01_LED_2
+Wire Wire Line
+	9950 5300 9900 5300
+Text Label 9900 5300 2    50   ~ 0
+IO_02_LED_3
+Text Label 9900 5600 2    50   ~ 0
+IO_03_LED_4
 $EndSCHEMATC

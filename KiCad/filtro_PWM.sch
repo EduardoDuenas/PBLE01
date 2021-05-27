@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L My_Lib:LM358 IC?
+U 1 1 60B37B2E
+P 5200 3100
+F 0 "IC?" H 5750 3365 50  0000 C CNN
+F 1 "LM358" H 5750 3274 50  0000 C CNN
+F 2 "SOP100P600X150-8N" H 6150 3200 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1902201702_IDCHIP-LM358_C329455.pdf" H 6150 3100 50  0001 L CNN
+F 4 "Operational Amplifiers SOP-8 RoHS" H 6150 3000 50  0001 L CNN "Description"
+F 5 "1.5" H 6150 2900 50  0001 L CNN "Height"
+F 6 "IDCHIP" H 6150 2800 50  0001 L CNN "Manufacturer_Name"
+F 7 "LM358" H 6150 2700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60B39132
+P 4200 4300
+F 0 "R?" H 4268 4346 50  0000 L CNN
+F 1 "R_US" H 4268 4255 50  0000 L CNN
+F 2 "" V 4240 4290 50  0001 C CNN
+F 3 "~" H 4200 4300 50  0001 C CNN
+	1    4200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60B3A3CF
+P 4700 3200
+F 0 "R?" H 4768 3246 50  0000 L CNN
+F 1 "R_US" H 4768 3155 50  0000 L CNN
+F 2 "" V 4740 3190 50  0001 C CNN
+F 3 "~" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60B3AF57
+P 4500 3400
+F 0 "R?" H 4568 3446 50  0000 L CNN
+F 1 "R_US" H 4568 3355 50  0000 L CNN
+F 2 "" V 4540 3390 50  0001 C CNN
+F 3 "~" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B3BC57
+P 5000 3650
+F 0 "#PWR?" H 5000 3400 50  0001 C CNN
+F 1 "GNDREF" H 5005 3477 50  0000 C CNN
+F 2 "" H 5000 3650 50  0001 C CNN
+F 3 "" H 5000 3650 50  0001 C CNN
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3100 2    50   Input ~ 0
+Vcc_5v
+Wire Wire Line
+	6500 3100 6300 3100
+Wire Wire Line
+	5000 3650 5000 3400
+Wire Wire Line
+	5000 3400 5200 3400
+Text Label 5100 3100 0    50   ~ 0
+PWM_Out
+Wire Wire Line
+	4850 3200 4950 3200
+Wire Wire Line
+	4550 3100 4550 3200
+Wire Wire Line
+	4550 3100 4950 3100
+Wire Wire Line
+	4500 3400 4550 3400
+Wire Wire Line
+	4950 3200 4950 3400
+Wire Wire Line
+	4950 3400 4650 3400
+Connection ~ 4950 3200
+Wire Wire Line
+	4950 3200 5200 3200
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B4497D
+P 3850 3650
+F 0 "#PWR?" H 3850 3400 50  0001 C CNN
+F 1 "GNDREF" H 3855 3477 50  0000 C CNN
+F 2 "" H 3850 3650 50  0001 C CNN
+F 3 "" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3650 3850 3400
+Wire Wire Line
+	3850 3400 4350 3400
+$Comp
+L Device:C C?
+U 1 1 60B4755D
+P 4650 4100
+F 0 "C?" H 4765 4146 50  0000 L CNN
+F 1 "C" H 4765 4055 50  0000 L CNN
+F 2 "" H 4688 3950 50  0001 C CNN
+F 3 "~" H 4650 4100 50  0001 C CNN
+	1    4650 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B4A029
+P 5150 4350
+F 0 "#PWR?" H 5150 4100 50  0001 C CNN
+F 1 "GNDREF" H 5155 4177 50  0000 C CNN
+F 2 "" H 5150 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0001 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4350 5150 4100
+Wire Wire Line
+	5150 4100 4800 4100
+Wire Wire Line
+	4200 4150 4200 4100
+Wire Wire Line
+	4200 4100 4350 4100
+Wire Wire Line
+	4350 4100 4350 3550
+Wire Wire Line
+	4350 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3300
+Wire Wire Line
+	5100 3300 5200 3300
+Connection ~ 4350 4100
+Wire Wire Line
+	4350 4100 4500 4100
+Text HLabel 4050 4800 0    50   Input ~ 0
+PWM_In
+Wire Wire Line
+	4050 4800 4200 4800
+Wire Wire Line
+	4200 4800 4200 4450
+Text HLabel 4900 2550 0    50   Output ~ 0
+PWM_Out
+Wire Wire Line
+	4900 2550 4950 2550
+Wire Wire Line
+	4950 2550 4950 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	4950 3100 5200 3100
+$EndSCHEMATC
