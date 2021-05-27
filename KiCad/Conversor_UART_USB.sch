@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -141,7 +141,7 @@ P 5200 2250
 AR Path="/60BE6322" Ref="Cref?"  Part="1" 
 AR Path="/60BE4F2F/60BE6322" Ref="Cref0"  Part="1" 
 F 0 "Cref0" V 5040 2250 50  0000 C CNN
-F 1 "10uF" V 5039 2250 50  0001 C CNN
+F 1 "10uF" V 5039 2250 50  0001 C BNN
 F 2 "" H 5238 2100 50  0001 C CNN
 F 3 "~" H 5200 2250 50  0001 C CNN
 	1    5200 2250

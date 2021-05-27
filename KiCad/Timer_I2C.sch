@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 4200 2350 1    50   Input ~ 0
+Text GLabel 4200 2200 1    50   Input ~ 0
 Vcc_5v
 $Comp
 L power:GNDREF #PWR0118
@@ -200,10 +200,41 @@ Wire Wire Line
 	5550 2900 6800 2900
 Connection ~ 5550 3200
 Wire Wire Line
-	4200 2350 4200 2600
-Wire Wire Line
 	4300 2500 4600 2500
 Connection ~ 3550 3100
 Wire Wire Line
 	3550 3100 3800 3100
+Wire Wire Line
+	4200 2200 4200 2300
+Wire Wire Line
+	4200 2300 4600 2300
+Connection ~ 4200 2300
+Wire Wire Line
+	4200 2300 4200 2600
+$Comp
+L Device:C C_Vcc_timer
+U 1 1 60B2356F
+P 4750 2300
+F 0 "C_Vcc_timer" V 4498 2300 50  0000 C CNN
+F 1 "100n" V 4589 2300 50  0000 C CNN
+F 2 "" H 4788 2150 50  0001 C CNN
+F 3 "~" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B242E7
+P 5000 2400
+F 0 "#PWR?" H 5000 2150 50  0001 C CNN
+F 1 "GNDREF" H 5005 2227 50  0000 C CNN
+F 2 "" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2300 5000 2300
+Wire Wire Line
+	5000 2300 5000 2400
 $EndSCHEMATC
