@@ -5,9 +5,9 @@ D AB26T-32.768KHZ
 F https://upverter.com/datasheet/e60e0d8762f6cc85b53388b76005bd605569ec5b.pdf
 $ENDCMP
 #
-$CMP LD1117DT33CTR
-D LD1117DT33CTR
-F http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00000544.pdf
+$CMP LM358
+D Operational Amplifiers SOP-8 RoHS
+F https://datasheet.lcsc.com/szlcsc/1902201702_IDCHIP-LM358_C329455.pdf
 $ENDCMP
 #
 #End Doc Library
