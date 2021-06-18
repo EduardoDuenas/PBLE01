@@ -54,10 +54,6 @@ F 3 "" H 1200 6100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 6100 1200 5850
-Text GLabel 1800 5250 2    50   Input ~ 0
-Vcc_5v
-Wire Wire Line
-	1800 5250 1500 5250
 Wire Notes Line
 	5950 4850 5950 6500
 Wire Notes Line
@@ -1282,4 +1278,5 @@ Wire Wire Line
 	9600 5950 9750 5950
 Wire Wire Line
 	10050 5950 10300 5950
+NoConn ~ 1500 5250
 $EndSCHEMATC

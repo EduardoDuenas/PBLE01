@@ -20,7 +20,7 @@ P 5200 3100
 F 0 "Filtro_Butterworth1" H 5750 3365 50  0000 C CNN
 F 1 "LM358" H 5750 3274 50  0000 C CNN
 F 2 "SOP100P600X150-8N" H 6150 3200 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1902201702_IDCHIP-LM358_C329455.pdf" H 6150 3100 50  0001 L CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/lm358-d.pdf" H 6150 3100 50  0001 L CNN
 F 4 "Operational Amplifiers SOP-8 RoHS" H 6150 3000 50  0001 L CNN "Description"
 F 5 "1.5" H 6150 2900 50  0001 L CNN "Height"
 F 6 "IDCHIP" H 6150 2800 50  0001 L CNN "Manufacturer_Name"
