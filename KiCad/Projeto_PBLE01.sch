@@ -321,20 +321,6 @@ Text Label 8950 1750 2    50   ~ 0
 USB_T_Led
 Text Label 8950 1650 2    50   ~ 0
 USB_R_Led
-$Sheet
-S 9050 850  1250 1000
-U 60BE4F2F
-F0 "Conversor_UART_USB" 50
-F1 "Conversor_UART_USB.sch" 50
-F2 "Rx" I L 9050 1050 50 
-F3 "Tx" O L 9050 1150 50 
-F4 "RTS" B L 9050 1250 50 
-F5 "CTS" B L 9050 1350 50 
-F6 "Rx_LED" B L 9050 1650 50 
-F7 "Tx_LED" B L 9050 1750 50 
-F8 "D-" B R 10300 1150 50 
-F9 "D+" B R 10300 1000 50 
-$EndSheet
 Wire Wire Line
 	8700 1350 9050 1350
 Wire Wire Line
@@ -1278,5 +1264,27 @@ Wire Wire Line
 	9600 5950 9750 5950
 Wire Wire Line
 	10050 5950 10300 5950
-NoConn ~ 1500 5250
+$Sheet
+S 9050 850  1250 1000
+U 60BE4F2F
+F0 "Conversor_UART_USB" 50
+F1 "Conversor_UART_USB.sch" 50
+F2 "Rx" I L 9050 1050 50 
+F3 "Tx" O L 9050 1150 50 
+F4 "RTS" B L 9050 1250 50 
+F5 "CTS" B L 9050 1350 50 
+F6 "Rx_LED" B L 9050 1650 50 
+F7 "Tx_LED" B L 9050 1750 50 
+F8 "D-" B R 10300 1150 50 
+F9 "D+" B R 10300 1000 50 
+F10 "Vbus" U R 10300 1650 50 
+$EndSheet
+Text Label 10350 1650 0    50   ~ 0
+Vbus_Externo
+Wire Wire Line
+	10300 1650 10350 1650
+Text Label 1700 5250 0    50   ~ 0
+Vbus_Externo
+Wire Wire Line
+	1500 5250 1700 5250
 $EndSCHEMATC

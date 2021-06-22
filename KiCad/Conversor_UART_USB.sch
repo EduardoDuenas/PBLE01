@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -170,8 +170,6 @@ Wire Wire Line
 	5850 2600 5950 2600
 Wire Wire Line
 	5850 2800 5950 2800
-Text GLabel 2550 2200 0    50   Input ~ 0
-Vcc_5v
 $Comp
 L Device:R_US R_RST1
 U 1 1 60C2C5EA
@@ -186,4 +184,8 @@ $EndComp
 Wire Wire Line
 	2550 2500 2550 2600
 Connection ~ 2550 2600
+Text HLabel 2500 2200 0    50   UnSpc ~ 0
+Vbus
+Wire Wire Line
+	2500 2200 2550 2200
 $EndSCHEMATC
