@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -176,7 +176,7 @@ U 1 1 60C2C5EA
 P 2550 2350
 F 0 "R_RST1" H 2618 2396 50  0000 L CNN
 F 1 "1k" H 2618 2305 50  0000 L CNN
-F 2 "" V 2590 2340 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2590 2340 50  0001 C CNN
 F 3 "~" H 2550 2350 50  0001 C CNN
 	1    2550 2350
 	1    0    0    -1  

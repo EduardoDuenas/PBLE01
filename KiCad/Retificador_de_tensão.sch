@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 10
 Title ""
 Date ""
 Rev ""
@@ -102,7 +102,7 @@ U 1 1 60A5A48D
 P 4300 3200
 F 0 "Retificador_de_tensão_5v1" H 5200 3587 60  0000 C CNN
 F 1 "LD1117DT50TR" H 5200 3481 60  0000 C CNN
-F 2 "DPAK_STM" H 5200 3440 60  0001 C CNN
+F 2 "" H 5200 3440 60  0001 C CNN
 F 3 "" H 4300 3200 60  0000 C CNN
 	1    4300 3200
 	1    0    0    -1  

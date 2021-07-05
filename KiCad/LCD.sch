@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 3 10
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 60AAFF17
 P 4900 3200
 F 0 "LCD1" H 4900 4081 50  0000 C CNN
 F 1 "RC1602A" H 4900 3990 50  0000 C CNN
-F 2 "Display:RC1602A" H 5000 2400 50  0001 C CNN
+F 2 "Display:WC1602A" H 5000 2400 50  0001 C CNN
 F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 5000 3100 50  0001 C CNN
 	1    4900 3200
 	1    0    0    -1  
@@ -49,7 +49,7 @@ U 1 1 60AB2FE4
 P 5500 3650
 F 0 "R_D+1" H 5568 3696 50  0000 L CNN
 F 1 "560" H 5568 3605 50  0000 L CNN
-F 2 "" V 5540 3640 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5540 3640 50  0001 C CNN
 F 3 "~" H 5500 3650 50  0001 C CNN
 	1    5500 3650
 	1    0    0    -1  
@@ -62,7 +62,7 @@ U 1 1 60AB7B9F
 P 5650 3000
 F 0 "Potenciometro_10k1" H 5582 2954 50  0000 R CNN
 F 1 "10k" H 5582 3045 50  0000 R CNN
-F 2 "" H 5650 3000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 5650 3000 50  0001 C CNN
 F 3 "~" H 5650 3000 50  0001 C CNN
 	1    5650 3000
 	-1   0    0    1   
