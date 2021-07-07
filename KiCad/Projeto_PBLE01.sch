@@ -1088,7 +1088,7 @@ U 1 1 60B35301
 P 3250 5950
 F 0 "Analog_1" H 3330 5896 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 3168 5716 50  0001 C CNN
-F 2 "" H 3250 5950 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3250 5950 50  0001 C CNN
 F 3 "~" H 3250 5950 50  0001 C CNN
 	1    3250 5950
 	1    0    0    -1  
@@ -1099,7 +1099,7 @@ U 1 1 60B32822
 P 3250 5550
 F 0 "Analog_0" H 3330 5496 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 3330 5451 50  0001 L CNN
-F 2 "" H 3250 5550 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3250 5550 50  0001 C CNN
 F 3 "~" H 3250 5550 50  0001 C CNN
 	1    3250 5550
 	1    0    0    -1  
