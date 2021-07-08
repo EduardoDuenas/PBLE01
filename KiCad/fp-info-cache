@@ -1,4 +1,4 @@
-19219310770200824
+19087431551809944
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -1532,20 +1532,6 @@ SPST Tactile Switch
 0
 4
 2
-Button_Switch_THT
-DIP1PIN
-
-
-0
-2
-2
-Button_Switch_THT
-DIP4PIN
-
-
-0
-8
-8
 Button_Switch_THT
 KSA_Tactile_SPST
 KSA http://www.ckswitches.com/media/1457/ksa_ksl.pdf
@@ -7815,13 +7801,6 @@ Connector_BarrelJack
 BarrelJack_Wuerth_6941xx301002
 Wuerth electronics barrel jack connector (5.5mm outher diameter, inner diameter 2.05mm or 2.55mm depending on exact order number), See: http://katalog.we-online.de/em/datasheet/6941xx301002.pdf
 connector barrel jack
-0
-3
-3
-Connector_BarrelJack
-PJ-002A
-
-
 0
 3
 3
@@ -47109,13 +47088,6 @@ Vigortronix VTX-214-010-xxx serie of ACDC converter
 0
 5
 5
-Converter_ACDC
-LD1117DT50TR
-
-
-0
-3
-3
 Converter_DCDC
 Converter_DCDC_Artesyn_ATA_SMD
 DCDC-Converter, Artesyn, ATA Series, 3W Single and Dual Output, 1500VDC Isolation, 24.0x13.7x8.0mm https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf https://www.artesyn.com/power/assets/trn_dc-dc_ata_3w_series_releas1430412818_techref.pdf
@@ -58694,6 +58666,34 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+My_Lib
+DIP1PIN
+
+
+0
+2
+2
+My_Lib
+DIP4PIN
+
+
+0
+8
+8
+My_Lib
+LD1117DT50TR
+
+
+0
+3
+3
+My_Lib
+PJ-002A
+
+
+0
+3
+3
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
