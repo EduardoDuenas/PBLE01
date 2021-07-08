@@ -25,7 +25,7 @@ AR Path="/60AB2F80/60AB6689" Ref="Crystal_12MHz"  Part="1"
 AR Path="/60BE4F2F/60BE631A/60AB6689" Ref="Crystal_12MHz1"  Part="1" 
 F 0 "Crystal_12MHz1" V 4954 3631 50  0000 L CNN
 F 1 "12MHz" V 5045 3631 50  0000 L CNN
-F 2 "" H 5000 3500 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 5000 3500 50  0001 C CNN
 F 3 "~" H 5000 3500 50  0001 C CNN
 	1    5000 3500
 	0    1    1    0   

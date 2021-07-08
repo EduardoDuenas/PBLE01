@@ -68,7 +68,7 @@ U 1 1 60A50A9A
 P 4200 3000
 F 0 "Timer_externo1" H 4200 2511 50  0000 C CNN
 F 1 "MCP7940N-xSN" H 4200 2420 50  0000 C CNN
-F 2 "" H 4200 3000 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4200 3000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf" H 4200 3000 50  0001 C CNN
 	1    4200 3000
 	1    0    0    -1  
@@ -164,7 +164,7 @@ U 1 1 60A5D7A4
 P 5550 2900
 F 0 "Cristal-AB26T-32.768KHZ1" V 5654 3028 50  0000 L CNN
 F 1 "32.768kHz" V 5745 3028 50  0000 L CNN
-F 2 "" H 5550 3300 50  0001 L CNN
+F 2 "Crystal:Crystal_Round_D3.0mm_Vertical" H 5550 3300 50  0001 L CNN
 F 3 "https://upverter.com/datasheet/e60e0d8762f6cc85b53388b76005bd605569ec5b.pdf" H 5550 3400 50  0001 L CNN
 F 4 "±20ppm" H 5550 3500 50  0001 L CNN "Frequency Tolerance"
 F 5 "Fundamental" H 5550 3600 50  0001 L CNN "Operating Mode"

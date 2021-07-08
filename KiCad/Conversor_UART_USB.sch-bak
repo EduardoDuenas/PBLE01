@@ -93,7 +93,7 @@ U 1 1 60BE969F
 P 2550 2750
 F 0 "C_Reset_Conversor1" H 2665 2796 50  0000 L CNN
 F 1 "1uF" H 2665 2705 50  0000 L CNN
-F 2 "" H 2550 2750 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 2550 2750 50  0001 C CNN
 F 3 "~" H 2550 2750 50  0001 C CNN
 	1    2550 2750
 	1    0    0    -1  
@@ -142,7 +142,7 @@ AR Path="/60BE6322" Ref="Cref?"  Part="1"
 AR Path="/60BE4F2F/60BE6322" Ref="Cref0"  Part="1" 
 F 0 "Cref0" V 5040 2250 50  0000 C CNN
 F 1 "10uF" V 5039 2250 50  0001 C BNN
-F 2 "" H 5238 2100 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 5238 2100 50  0001 C CNN
 F 3 "~" H 5200 2250 50  0001 C CNN
 	1    5200 2250
 	0    1    1    0   
@@ -155,7 +155,7 @@ AR Path="/60BF158F" Ref="Cref?"  Part="1"
 AR Path="/60BE4F2F/60BF158F" Ref="Cref1"  Part="1" 
 F 0 "Cref1" V 5040 1950 50  0000 C CNN
 F 1 "10uF" V 5039 1950 50  0001 C CNN
-F 2 "" H 5238 1800 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 5238 1800 50  0001 C CNN
 F 3 "~" H 5200 1950 50  0001 C CNN
 	1    5200 1950
 	0    1    1    0   
