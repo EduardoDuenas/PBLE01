@@ -19,7 +19,7 @@ U 1 1 60B37B2E
 P 5200 3100
 F 0 "Filtro_Butterworth1" H 5750 3365 50  0000 C CNN
 F 1 "LM358" H 5750 3274 50  0000 C CNN
-F 2 "" H 6150 3200 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 3200 50  0001 L CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/lm358-d.pdf" H 6150 3100 50  0001 L CNN
 F 4 "Operational Amplifiers SOP-8 RoHS" H 6150 3000 50  0001 L CNN "Description"
 F 5 "1.5" H 6150 2900 50  0001 L CNN "Height"
@@ -92,8 +92,8 @@ L Device:C C_GND_Filtro1
 U 1 1 60B4755D
 P 4550 3450
 F 0 "C_GND_Filtro1" H 4665 3496 50  0000 L CNN
-F 1 "C" H 4665 3405 50  0000 L CNN
-F 2 "" H 4588 3300 50  0001 C CNN
+F 1 "10nF" H 4665 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4588 3300 50  0001 C CNN
 F 3 "~" H 4550 3450 50  0001 C CNN
 	1    4550 3450
 	1    0    0    -1  
