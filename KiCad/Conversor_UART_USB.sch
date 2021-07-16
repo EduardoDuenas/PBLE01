@@ -43,10 +43,6 @@ Wire Wire Line
 	4950 4000 4950 4250
 Wire Wire Line
 	4850 2250 4850 2400
-Text GLabel 4700 2250 0    50   Input ~ 0
-Vcc_5v
-Wire Wire Line
-	4700 2250 4850 2250
 $Comp
 L power:GNDREF #PWR?
 U 1 1 60BE6316
@@ -188,4 +184,8 @@ Text HLabel 2500 2200 0    50   UnSpc ~ 0
 Vbus
 Wire Wire Line
 	2500 2200 2550 2200
+Wire Wire Line
+	4700 2250 4850 2250
+Text GLabel 4700 2250 0    50   Input ~ 0
+Vcc_5v
 $EndSCHEMATC
