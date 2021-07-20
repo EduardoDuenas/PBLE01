@@ -44,7 +44,7 @@ F 7 "LM358" H 5800 2600 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3000 6100 3000
+	5950 3000 6050 3000
 Text HLabel 6150 3600 2    50   BiDi ~ 0
 V+_2
 Text HLabel 6600 3900 2    50   BiDi ~ 0
@@ -327,4 +327,41 @@ Wire Wire Line
 	6600 3200 6950 3200
 Text Notes 5100 2600 0    50   ~ 0
 Saturação 0,3v-3,3v
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60FB68FD
+P 6900 2650
+AR Path="/60FB68FD" Ref="#PWR?"  Part="1" 
+AR Path="/60B29ED3/60FB68FD" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 6900 2400 50  0001 C CNN
+F 1 "GNDREF" H 6905 2477 50  0000 C CNN
+F 2 "" H 6900 2650 50  0001 C CNN
+F 3 "" H 6900 2650 50  0001 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CS?
+U 1 1 60FB6903
+P 6700 2550
+AR Path="/60FB6903" Ref="CS?"  Part="1" 
+AR Path="/60B29ED3/60FB6903" Ref="CS4"  Part="1" 
+F 0 "CS4" V 6448 2550 50  0000 C CNN
+F 1 "C" V 6539 2550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6738 2400 50  0001 C CNN
+F 3 "~" H 6700 2550 50  0001 C CNN
+	1    6700 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 2650 6900 2550
+Wire Wire Line
+	6900 2550 6850 2550
+Wire Wire Line
+	6550 2550 6050 2550
+Wire Wire Line
+	6050 2550 6050 3000
+Connection ~ 6050 3000
+Wire Wire Line
+	6050 3000 6100 3000
 $EndSCHEMATC

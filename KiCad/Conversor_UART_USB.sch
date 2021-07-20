@@ -188,4 +188,39 @@ Wire Wire Line
 	4700 2250 4850 2250
 Text GLabel 4700 2250 0    50   Input ~ 0
 Vcc_5v
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60FB0F70
+P 5700 1650
+AR Path="/60FB0F70" Ref="#PWR?"  Part="1" 
+AR Path="/60BE4F2F/60FB0F70" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 5700 1400 50  0001 C CNN
+F 1 "GNDREF" H 5705 1477 50  0000 C CNN
+F 2 "" H 5700 1650 50  0001 C CNN
+F 3 "" H 5700 1650 50  0001 C CNN
+	1    5700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CS?
+U 1 1 60FB0F76
+P 5500 1550
+AR Path="/60FB0F76" Ref="CS?"  Part="1" 
+AR Path="/60BE4F2F/60FB0F76" Ref="CS5"  Part="1" 
+F 0 "CS5" V 5248 1550 50  0000 C CNN
+F 1 "C" V 5339 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5538 1400 50  0001 C CNN
+F 3 "~" H 5500 1550 50  0001 C CNN
+	1    5500 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 1650 5700 1550
+Wire Wire Line
+	5700 1550 5650 1550
+Wire Wire Line
+	5350 1550 4850 1550
+Wire Wire Line
+	4850 1550 4850 2250
+Connection ~ 4850 2250
 $EndSCHEMATC

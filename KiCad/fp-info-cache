@@ -1,4 +1,4 @@
-19093936646066169
+19090687120503142
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58666,6 +58666,13 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+MyLib
+my
+LCD 16x2 http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf
+LCD 16x2 Alphanumeric 16pin
+0
+18
+16
 My_Lib
 DIP1PIN
 
@@ -58680,6 +58687,13 @@ DIP4PIN
 0
 8
 8
+My_Lib
+LCD
+LCD 16x2 http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf
+LCD 16x2 Alphanumeric 16pin
+0
+18
+16
 My_Lib
 LD1117DT50TR
 
@@ -83054,31 +83068,3 @@ varistor SIOV
 0
 2
 2
-projeto PBLE bibliotecas
-DIP1PIN
-
-
-0
-2
-2
-projeto PBLE bibliotecas
-DIP4PIN
-
-
-0
-8
-8
-projeto PBLE bibliotecas
-LD1117DT50TR
-
-
-0
-3
-3
-projeto PBLE bibliotecas
-PJ-002A
-
-
-0
-3
-3
